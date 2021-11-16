@@ -7,7 +7,7 @@ author:
   - affiliation:
     - id: "1"
       institution: "Department of Geography, University of Wisconsin--Madison"
-date: "05/05/2021"
+date: "`r lubridate::today()`"
 description: |
   A summary of current Neotoma activity, potential data issues and other summary information.
 keywords: "SQL, Neotoma Paleoecology Database, paleoecology"
@@ -28,7 +28,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 
 library(pacman)
-p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf)
+p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf, lubridate)
+
+lastdate <- today() - years(1)
 
 dbLogin <- fromJSON('connect_remote.json')
 
@@ -50,7 +52,9 @@ sites <- dbGetQuery(con, "SELECT COUNT(*) FROM ndb.sites")
 lastyear <- dbGetQuery(con, "SELECT * FROM ndb.rawbymonth(0,12)")
 ```
 
-In total Neotoma contains data from `r p(datasets)` datasets and `r p(sites)` unique sites.  This represents a considerable contribution from members of the scientific community, including primary investigators, analysts, data curators and stewards, and the members of the Neotoma Paleoecology Database Community.
+This report largely details changes in the database since **`r lastdate`**, and is current up to **`r lubridate::today()`**.  
+
+In total Neotoma contains data from `r p(datasets)` datasets and `r p(sites)` unique sites. This represents a considerable contribution from members of the scientific community, including primary investigators, analysts, data curators and stewards, and the members of the Neotoma Paleoecology Database Community.
 
 ```{r dftable, echo=FALSE, fig.cap=""}
 outtable <- t(lastyear) %>% 
@@ -63,7 +67,7 @@ DT::datatable(outtable,
 
 ### Site additions
 
-```{r plotSites, echo=FALSE, warning=FALSE}
+```{r plotSites, echo=FALSE, warning=FALSE, fig.cap="Locations of newly added sites in Neotoma during the past year.  The map is interactive and supports zoom/pan operations."}
 
 newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.sites WHERE recdatecreated > now() - interval '1 year'") %>% unlist()
 
@@ -80,6 +84,8 @@ map <- leaflet::leaflet(sf) %>%
 
 map
 ```
+
+#### Site Spatial Types
 
 Sites can be added as either points or polygons.  Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` of those are entered as site polygons, while `r p(sum(shape == FALSE))` are entered as single coordinate points.  In general polygons provide more complete information about the site, often representing the particular shape of the depositional environment (lake, archaeological site).
 
@@ -129,7 +135,7 @@ DT::datatable(missing,
 
 ### API Calls
 
-```{r pullLogs, echo=FALSE}
+```{r pullLogs, echo=FALSE, fig.caption="Volume of API calls to API and Tilia servers, aggregated by day over the last 12 months."}
 pullLog <- function(filename) {
   aa <- read.delim(filename, 
                    header = FALSE) %>% 
@@ -167,7 +173,7 @@ ggplot(logTime) +
 
 Since the API has been implemented there have been a total of `r p(sum(logTime$n))` calls to the Neotoma API.  These include calls to the core API ([`api.neotomadb.org`](https://api.neotomadb.org)), calls to support the Neotoma Landing Pages ([`data.neotomadb.org`](https://data.neotomadb.org)) and calls to support Neotoma Explorer ([`apps.neotomadb.org/explorer`](https://data.neotomadb.org)).
 
-The main APIs delivered a total of `r p(floor(sum(as.numeric(apiOut$contentlength), na.rm=TRUE) /1000000))` MB of data to users over the last year, with the most significant payload beginning in approximately October 2020.
+The main APIs delivered a total of `r p(floor(sum(as.numeric(apiOut$contentlength), na.rm=TRUE) /1000000000))` GB of data to users over the last year, with the most significant payload beginning in approximately October 2020.
 
 Average response time for the web services was `r p(floor(mean(as.numeric(apiOut$responsetime), na.rm=TRUE)))`ms, with a maximum response time of `r p(floor(max(as.numeric(apiOut$responsetime), na.rm=TRUE)) / 1000)`sec.  Approximately `r p(round(sum((as.numeric(apiOut$responsetime) > 1000), na.rm=TRUE) / nrow(apiOut) * 100, 2))`% of all responses took more than one second to return data.
 
