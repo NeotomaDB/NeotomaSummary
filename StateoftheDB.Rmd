@@ -17,7 +17,7 @@ output:
     toc: true
     toc_depth: 3
     toc_float: true
-    number_sections: true
+    number_sections: false
     self_contained: true
     fig_caption: true
     code_folding: hide
@@ -397,6 +397,50 @@ getSynos <- dbGetQuery(con, query)
 The database currently contains `r p(synds)` datasets with synonymys, and a total of `r p(synCount)` attributed synonyms.  Of the synonyms with associated datastids, there are `r p(nrow(getSynos %>% filter(synids == '{NULL}')))` synonymys without links in the synonyms table.  There are `r nrow(getSynos %>% filter(pubs == '{NULL}' & contacts == '{NULL}'))` synonyms where there is no attributed contactid or publication.
 
 There are `r p(nrow(getSynos %>% filter(stringr::str_detect(pubs, ','))))` synonymys where multiple different publications are used to attribute the synonymy.  There are also `r p(nrow(getSynos %>% filter(stringr::str_detect(contacts, ','))))` where multiple different individuals are identified as assigning the synonym.  There are `r p(nrow(getSynos %>% filter(stringr::str_detect(pubs, 'NULL'))))` synonyms without any associated publication.
+
+#### Duplicated Variables
+
+We use variable IDs (PK: `ndb.variables.variableid`) to link a taxon, the element, context and units.  In general, we don't expect that these should ever be duplicated, since we can use the same variable ID over and over again, for the given combination.  Having said that, we do see replication, and it's not clear why.
+
+```{r dupvars}
+query <- "WITH mult AS (
+    SELECT DISTINCT UNNEST(array_agg(variableid)) as varid
+    FROM ndb.variables 
+    GROUP BY taxonid, variableelementid, variableunitsid, variablecontextid
+    HAVING array_length(array_agg(variableid),1) > 1 
+), dmult AS (
+SELECT var.*, COUNT(dt.*) FROM mult 
+JOIN ndb.data AS dt ON dt.variableid = mult.varid
+JOIN ndb.variables AS var ON var.variableid = mult.varid
+GROUP BY var.variableid
+ORDER BY var.taxonid, var.variableelementid, var.variableunitsid, var.variablecontextid)
+SELECT * FROM dmult;"
+
+synds <- dbGetQuery(con, query)
+DT::datatable(synds)
+```
+
+In `r p(nrow(synds))` variables we see that there is duplication of the keys in the `variableids`.  Interestingly it seems that this is an issue that primarily affects the mammal records:
+
+```{r vardupissue}
+query <- "WITH mult AS (
+    SELECT DISTINCT UNNEST(array_agg(variableid)) as varid
+    FROM ndb.variables 
+    GROUP BY taxonid, variableelementid, variableunitsid, variablecontextid
+    HAVING array_length(array_agg(variableid),1) > 1 
+), dmult AS (
+SELECT var.*, COUNT(dt.*) FROM mult 
+JOIN ndb.data AS dt ON dt.variableid = mult.varid
+JOIN ndb.variables AS var ON var.variableid = mult.varid
+GROUP BY var.variableid
+ORDER BY var.taxonid, var.variableelementid, var.variableunitsid, var.variablecontextid)
+SELECT tx.taxonid, COUNT(*), tx.taxonname FROM dmult JOIN ndb.taxa AS tx ON tx.taxonid = dmult.taxonid GROUP BY tx.taxonid;"
+
+varthing <- dbGetQuery(con, query)
+DT::datatable(varthing)
+```
+
+The ground sloth `Paramylodon harlani` seems to have the biggest issues.  Some possible reasons for this larger issue may be associated with the ways "specimens" are added to the database, potentially causing a conflict.  This issue should possibly be flagged as a situation where we could add a composite primary key to the table.
 
 ### Sites and Datasets
 
