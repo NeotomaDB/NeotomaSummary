@@ -9,7 +9,7 @@ library(lubridate)
 library(scales)
 
 datasettypes <- function(x) {
-  call <- httr::GET('http://localhost:3005/v2.0/data/summary/dstypemonth',
+  call <- httr::GET('http://api.neotomadb.org/v2.0/data/summary/dstypemonth',
                     query = list(start = x, end = x + 1))
   result <- jsonlite::fromJSON(httr::content(call, as = 'text'))$data$data
   result$month <- x
@@ -74,7 +74,7 @@ ggsave('datasetsPerMonth.svg', out, width = 8, height = 6, units = "in")
 ##################
 
 datasetdbs <- function(x) {
-  call <- httr::GET('http://localhost:3005/v2.0/data/summary/dsdbmonth',
+  call <- httr::GET('http://api.neotomadb.org/v2.0/data/summary/dsdbmonth',
                     query = list(start = x, end = x + 1))
   result <- jsonlite::fromJSON(httr::content(call, as = 'text'))$data$data
   result$month <- x
@@ -104,7 +104,7 @@ ggsave('constDBPerMonth.svg', out, width = 16, height = 4, units = "in")
 ######################
 
 rawmonthly <- function(x) {
-  call <- httr::GET('http://localhost:3005/v2.0/data/summary/rawbymonth',
+  call <- httr::GET('http://api.neotomadb.org/v2.0/data/summary/rawbymonth',
                     query = list(start = x, end = 500))
   result <- jsonlite::fromJSON(httr::content(call, as = 'text'))$data$data
   result$month <- x
