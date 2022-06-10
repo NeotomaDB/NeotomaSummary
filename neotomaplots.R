@@ -75,8 +75,8 @@ out <- ggplot(monthly_out, aes(x = month, y = count, fill = datasettype)) +
   theme(axis.title = element_text(face = "bold", size = 18),
         axis.text = element_text(family = "sans-serif", size = 10))
 
-ggsave("datasetsPerMonth.png", out, width = 8, height = 6, units = "in")
-ggsave("datasetsPerMonth.svg", out, width = 8, height = 6, units = "in")
+ggsave("outputs/datasetsPerMonth.png", out, width = 8, height = 6, units = "in")
+ggsave("outputs/datasetsPerMonth.svg", out, width = 8, height = 6, units = "in")
 
 ##################
 
@@ -105,8 +105,8 @@ out <- ggplot(monthly_change,
   theme(axis.title = element_text(face = "bold", size = 18),
         axis.text = element_text(family = "sans-serif", size = 10))
 
-ggsave("constDBPerMonth.png", out, width = 16, height = 4, units = "in")
-ggsave("constDBPerMonth.svg", out, width = 16, height = 4, units = "in")
+ggsave("outputs/constDBPerMonth.png", out, width = 16, height = 4, units = "in")
+ggsave("outputs/constDBPerMonth.svg", out, width = 16, height = 4, units = "in")
 
 ######################
 
@@ -136,5 +136,5 @@ out <- ggplot(output, aes(x = month, y = as.numeric(count), group = obs)) +
   theme(axis.title = element_text(face = "bold", size = 18),
         axis.text = element_text(family = "sans-serif", size = 10))
 
-ggsave("ChangeOverTime.png", out, width = 8, height = 4, units = "in")
-ggsave("ChangeOverTime.svg", out, width = 8, height = 4, units = "in")
+ggsave("outputs/ChangeOverTime.png", out, width = 8, height = 4, units = "in")
+ggsave("outputs/ChangeOverTime.svg", out, width = 8, height = 4, units = "in")
