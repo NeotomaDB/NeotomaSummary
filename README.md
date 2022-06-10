@@ -18,17 +18,22 @@ All products of the Neotoma Paleoecology Database are licensed under an [MIT Lic
 
 ## How to Run
 
-The following bash script can be used to restore the latest Neotoma snapshot to a local installation. It assumes a current installation of Postgres.
+The following bash script can be used to restore the latest Neotoma snapshot to a local installation.
+
+We can obtain and load the Neotoma database from the [Neotoma Paleoecology Database](https://neotomadb.org) website using the following command-line script. This assumes you have Postgres and PostGIS installed. Here we use the default user `postgres`, and assume that there is an environment variable `PGPASSWORD` set to the `postgres` user's password.  That setup would allow the following script to run without interruption (for example, in a `bash` script).
 
 ```bash
 mkdir dbout
 wget https://www.neotomadb.org/uploads/snapshots/neotoma_ndb_only_latest.tar --no-check-certificate
 tar -xf neotoma_ndb_only_latest.tar -C ./dbout
-dropdb temp
-createdb temp
-psql -d temp -c "CREATE EXTENSION postgis; CREATE EXTENSION pg_trgm;"
-psql -d temp -f ./dbout/neotoma_ndb_only_latest.sql
+dropdb -h localhost -U postgres neotoma
+createdb  -h localhost -U postgres neotoma
+psql -h localhost -U postgres -d neotoma -c "CREATE EXTENSION postgis; CREATE EXTENSION pg_trgm;"
+psql  -h localhost -U postgres -d neotoma -f ./dbout/neotoma_ndb_only_latest.sql
+rm -r ./dbout
 ```
+
+The above script creates a duplicate of the database locally and then cleans up the `sql` file extracted from the downloaded `tar` archive.
 
 The document expects environment variables (we use defaults here, assuming the Neotoma database has been restored locally):
 
@@ -38,6 +43,8 @@ The document expects environment variables (we use defaults here, assuming the N
 * USER=postgres
 * PASSWORD=postgres
 
-These variables are currently set in the `buildStats.sh` bash script.
+These variables are currently set by hand in the `buildStats.sh` bash script.
 
-The database itself can be obtained from [https://neotomadb.org/snapshots](https://neotomadb.org/snapshots).
+To execute and build the RMarkdown file, simply run `bash buildStats.sh` and a valid HTML document will be generated and output into the `outputs` folder.
+
+![The rendered Neotoma Stats document.](assets/docScreenshot.png)

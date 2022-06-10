@@ -493,8 +493,8 @@ dupTc %>%
 ### Stewards & Tilia Usage
 
 ```{r tiliaLogs, echo=FALSE, eval=FALSE}
-
-tiliaLog <- pullLog('../logs/ceiwww/tilia.neotomadb.org/node/access.log')
+# Due to security issues this section is not evaluated. We'll fix this later :)
+tiliaLog <- pullLog('logs/access.log')
 
 logTime <- tiliaLog %>%
   filter(date > (lubridate::now() - years(1))) %>% 
