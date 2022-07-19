@@ -28,7 +28,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 
 library(pacman)
-p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf, lubridate)
+p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf)
 
 lastdate <- today() - years(1)
 
@@ -53,7 +53,7 @@ analystset <- dbGetQuery(con, "SELECT COUNT(DISTINCT contactid) FROM ndb.samplea
 constdb <- dbGetQuery(con, "SELECT COUNT(*) FROM ndb.constituentdatabases;")
 ```
 
-This report largely details changes to the database since **`r lastdate`**, and is current up to **`r lubridate::today()`**. 
+This report details changes to the database since **`r lastdate`**, and is current up to **`r lubridate::today()`**.
 
 In total Neotoma contains data from `r p(datasets)` datasets and `r p(sites)` unique sites. This represents a considerable contribution from members of the scientific community, including `r p(piset)` primary investigators, `r p(analystset)` analysts, and stewards for all `r p(constdb)` constituent databases. There are also invaluable and incalculable contributions from the members of the Neotoma Paleoecology Database Community.
 
@@ -65,12 +65,16 @@ outtable <- t(lastyear) %>%
 DT::datatable(outtable, 
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
-    "Table 1: ", htmltools::em("Database contributions over the prior 12 months for the Neotoma Paleoecology Database.")
+    "Table 1: ", htmltools::em("Database contributions from the prior 12 months for the Neotoma Paleoecology Database.")
   ),
   options = list(dom = 't', scrollX = "100%"))
 ```
 
-### Site additions
+Full documentation of the database can be found in the [Neotoma Database Manual](open.neotomadb.org/neotoma_bookdown/_book/index.html). Recent snapshots of the database can be obtained from the [Neotoma Snapshot website](https://neotomadb.org/snapshots).
+
+### Recent Data Updates
+
+#### Site Additions
 
 ```{r plotSites, echo=FALSE, warning=FALSE, fig.cap="Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)."}
 
@@ -90,53 +94,47 @@ map <- leaflet::leaflet(sf) %>%
 map
 ```
 
-#### Site Spatial Types
+Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` have been entered as polygons, while `r p(sum(shape == FALSE))` are entered as single coordinate points. In general polygons provide more complete information about the site, often representing the particular shape of the depositional environment (lake, archaeological site).
 
-Sites can be added as either points or polygons. Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` of those are entered as site polygons, while `r p(sum(shape == FALSE))` are entered as single coordinate points. In general polygons provide more complete information about the site, often representing the particular shape of the depositional environment (lake, archaeological site).
+### Dataset Additions
 
-#### Site Metadata
+```{r dbcontribds}
+newDsByDB <- dbGetQuery(con, "SELECT * FROM ndb.stewardcontrib(endperiod:=12) ORDER BY counts DESC;")
 
-```{r siteMeta, echo=FALSE}
-siteMeta <- dbGetQuery(con, "SELECT sitename, 
-                              altitude, 
-                              area, 
-                              sitedescription, 
-                              notes 
-                       FROM ndb.sites 
-                       WHERE recdatecreated > now() - interval '1 year'")
+DT::datatable(newDsByDB,
+  caption = htmltools::tags$caption(
+    style = 'caption-side: top; text-align: left;',
+    "Table 1: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by constituent database.")
+  ),
+  options = list(dom = 't', scrollX = "100%"))
 
-missing <- colSums(is.na(siteMeta)) %>% 
-  data.frame(Missing=.)
-DT::datatable(missing,
-  options = list(dom = 'tip', scrollX = "100%"))
+newDsByDt <- dbGetQuery(con, "SELECT * FROM ndb.datasettypecontrib(endperiod:=12) ORDER BY counts DESC;")
 ```
 
-Among the `r p(nrow(siteMeta))` sites added to the Neotoma Paleoecology Database in the past year, not all sites were entered with complete metadata. Complete metadata is critical for better understanding data context, particularly when site notes & descriptions are required to better understand data.
+Of the `r lastyear$datasets` datasets added to Neotoma over the past year, there have been contributions to `r nrow(newDsByDB)`, with the majority from `r newDsByDB[1,1]`. This pattern of contribution is reflected in contributions to dataset types, where we see contributions to `r nrow(newDsByDt)` dataset types.
 
-#### Dataset Metadata
-
-```{r datasetMeta, echo=FALSE}
-datasetMeta <- dbGetQuery(con, 
-"SELECT cu.handle AS handle,
-    cu.collunitname AS collunitname, 
-    cu.colldate AS colldate, 
-    cu.colldevice AS colldevice, 
-    cu.waterdepth AS waterdepth, 
-    cu.slopeangle AS slopeangle, 
-    cu.slopeaspect AS aspect, 
-    cu.location AS location, 
-    cu.notes AS collunitnotes, 
-    ds.datasetname AS datasetname, 
-    ds.notes AS datasetnotes
-    FROM ndb.datasets AS ds
-    INNER JOIN ndb.collectionunits AS cu ON ds.collectionunitid = cu.collectionunitid
-    WHERE ds.recdatecreated > now() - interval '1 year'")
-
-missing <- colSums(is.na(datasetMeta)) %>% 
-  data.frame(Missing=.)
-DT::datatable(missing,
-  options = list(dom = 'tip', scrollX = "100%"))
+```{r dbcontribdst}
+DT::datatable(newDsByDt,
+  caption = htmltools::tags$caption(
+    style = 'caption-side: top; text-align: left;',
+    "Table 1: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by dataset type.")
+  ),
+  options = list(dom = 't', scrollX = "100%"))
 ```
+
+### Contributors
+
+```{r}
+newDsByCt <- dbGetQuery(con, "SELECT * FROM ndb.datasetcontribs(endperiod:=12) ORDER BY counts DESC;")
+DT::datatable(newDsByCt,
+  caption = htmltools::tags$caption(
+    style = 'caption-side: top; text-align: left;',
+    "Table 1: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by the dataset contributor.")
+  ),
+  options = list(dom = 't', scrollX = "100%"))
+```
+
+Neotoma relies on significant the efforts of a volunteer group of data stewards and data contributors. Over the last 12 months `r nrow(newDsByCt)` stewards have contributed data to Neotoma, across a range of constituent databases.
 
 ### API Calls
 
@@ -225,6 +223,56 @@ apiSumm %>%
   slice_max(time, n = 20) %>% 
   select(call, time) %>% 
   DT::datatable(options=list(dom='tip', scrollX = "100%"))
+```
+
+## Data Overview
+
+### Site Spatial Types
+
+Sites can be added as either points or polygons. Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` of those are entered as site polygons, while `r p(sum(shape == FALSE))` are entered as single coordinate points. In general polygons provide more complete information about the site, often representing the particular shape of the depositional environment (lake, archaeological site).
+
+### Site Metadata
+
+```{r siteMeta, echo=FALSE}
+siteMeta <- dbGetQuery(con, "SELECT sitename, 
+                              altitude, 
+                              area, 
+                              sitedescription, 
+                              notes 
+                       FROM ndb.sites 
+                       WHERE recdatecreated > now() - interval '1 year'")
+
+missing <- colSums(is.na(siteMeta)) %>% 
+  data.frame(Missing=.)
+DT::datatable(missing,
+  options = list(dom = 'tip', scrollX = "100%"))
+```
+
+Among the `r p(nrow(siteMeta))` sites added to the Neotoma Paleoecology Database in the past year, not all sites were entered with complete metadata. Complete metadata is critical for better understanding data context, particularly when site notes & descriptions are required to better understand data.
+
+#### Dataset Metadata
+
+```{r datasetMeta, echo=FALSE}
+datasetMeta <- dbGetQuery(con, 
+"SELECT cu.handle AS handle,
+    cu.collunitname AS collunitname, 
+    cu.colldate AS colldate, 
+    cu.colldevice AS colldevice, 
+    cu.waterdepth AS waterdepth, 
+    cu.slopeangle AS slopeangle, 
+    cu.slopeaspect AS aspect, 
+    cu.location AS location, 
+    cu.notes AS collunitnotes, 
+    ds.datasetname AS datasetname, 
+    ds.notes AS datasetnotes
+    FROM ndb.datasets AS ds
+    INNER JOIN ndb.collectionunits AS cu ON ds.collectionunitid = cu.collectionunitid
+    WHERE ds.recdatecreated > now() - interval '1 year'")
+
+missing <- colSums(is.na(datasetMeta)) %>% 
+  data.frame(Missing=.)
+DT::datatable(missing,
+  options = list(dom = 'tip', scrollX = "100%"))
 ```
 
 ### Taxon Overview
@@ -408,6 +456,7 @@ The database currently contains `r p(synds)` datasets with synonymys, and a tota
 
 There are `r p(nrow(getSynos %>% filter(stringr::str_detect(pubs, ','))))` synonymys where multiple different publications are used to attribute the synonymy. There are also `r p(nrow(getSynos %>% filter(stringr::str_detect(contacts, ','))))` where multiple different individuals are identified as assigning the synonym. There are `r p(nrow(getSynos %>% filter(stringr::str_detect(pubs, 'NULL'))))` synonyms without any associated publication.
 
+
 #### Duplicated Variables
 
 We use variable IDs (PK: `ndb.variables.variableid`) to link a taxon, the element, context and units. In general, we don't expect that these should ever be duplicated, since we can use the same variable ID over and over again, for the given combination. Having said that, we do see replication, and it's not clear why.
@@ -489,6 +538,41 @@ dupTc %>%
   DT::datatable(options=list(dom='tip', scrollX = "100%"))
 
 ```
+
+#### Sites without CollectionUnits or Datasets
+
+Some sites appear to have been submitted, but have no associated collectionunit or dataset data:
+
+```{r missinginfo}
+missingds <- dbGetQuery(con,
+    "SELECT st.siteid, st.sitename, array_agg(cu.collectionunitid) AS collectionunits
+     FROM ndb.sites AS st
+     LEFT OUTER JOIN ndb.collectionunits AS cu ON cu.siteid = st.siteid
+     LEFT OUTER JOIN ndb.datasets AS ds ON ds.collectionunitid = cu.collectionunitid
+     WHERE cu.collectionunitid IS NULL OR ds.datasetid IS NULL
+     GROUP BY st.siteid, st.sitename;") %>%
+  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+```
+
+This is likely the result of failed uploads during the Tilia upload process (see [Tilia upload reference here](https://github.com/NeotomaDB/tilia_api/blob/production/tiliauploadref.yaml)). To ensure that these records are properly cleaned we need to validate that there are collection units and datasets associated with the records, and, ultimately, we need to parse the records from Tilia in such a way that we are not committing individual steps within the upload process, but rather, processing the entire file at once.
+
+#### Sites without analysis units
+
+Some sites appear to have been submitted, with collection units but no registered analysis units associated with them:
+
+```{r missinginfoaus}
+dbGetQuery(con,
+    "SELECT st.siteid, st.sitename, cu.collectionunitid AS collectionunits, array_agg(ds.datasetid) AS datasets
+     FROM ndb.sites AS st
+     LEFT OUTER JOIN ndb.collectionunits AS cu ON cu.siteid = st.siteid
+     LEFT OUTER JOIN ndb.analysisunits AS au ON au.collectionunitid = cu.collectionunitid
+     LEFT OUTER JOIN ndb.datasets AS ds ON ds.collectionunitid = cu.collectionunitid
+     WHERE au.analysisunitid IS NULL
+     GROUP BY st.siteid, st.sitename, cu.collectionunitid;") %>%
+  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+```
+
+This is also likely the result of failed uploads during the Tilia upload process. To ensure that these records are properly cleaned we need to validate that there are collection units and datasets associated with the records, and, ultimately, we need to parse the records from Tilia in such a way that we are not committing individual steps within the upload process, but rather, processing the entire file at once.
 
 ### Stewards & Tilia Usage
 
