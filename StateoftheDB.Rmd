@@ -76,7 +76,7 @@ Full documentation of the database can be found in the [Neotoma Database Manual]
 
 #### Site Additions
 
-```{r plotSites, echo=FALSE, warning=FALSE, fig.cap="Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)."}
+```{r plotSites, echo=FALSE, warning=FALSE, fig.cap="**Figure 1.** *Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)*."}
 
 newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.sites WHERE recdatecreated > now() - interval '1 year'") %>% unlist()
 
@@ -181,13 +181,13 @@ ggsave("outputs/datasetsPerMonth.png", out, width = 8, height = 6, units = "in")
 ggsave("outputs/datasetsPerMonth.svg", out, width = 8, height = 6, units = "in")
 ```
 
-Of the `r lastyear$datasets` datasets added to Neotoma over the past year, there have been contributions to `r nrow(newDsByDB)`, with the majority from `r newDsByDB[1,1]`. This pattern of contribution is reflected in contributions to dataset types, where we see contributions to `r nrow(newDsByDt)` dataset types.
+Of the `r lastyear$datasets` datasets added to Neotoma over the past year, there have been contributions to `r nrow(newDsByDB)` constituent databases, with the majority from `r newDsByDB[1,1]`. This pattern of contribution is reflected in contributions to dataset types, where we see contributions to `r nrow(newDsByDt)` dataset types.
 
 ```{r dbcontribdst}
 DT::datatable(newDsByDt,
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
-    "Table 1: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by dataset type.")
+    "Table 2: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by dataset type.")
   ),
   options = list(dom = 't', scrollX = "100%"))
 ```
