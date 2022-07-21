@@ -28,7 +28,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 
 library(pacman)
-p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf)
+p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales)
 
 lastdate <- today() - years(1)
 
@@ -98,7 +98,7 @@ Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` have been 
 
 ### Dataset Additions
 
-```{r dbcontribds}
+```{r dbcontribds, echo=FALSE, warning=FALSE}
 newDsByDB <- dbGetQuery(con, "SELECT * FROM ndb.stewardcontrib(endperiod:=12) ORDER BY counts DESC;")
 
 DT::datatable(newDsByDB,
@@ -109,6 +109,76 @@ DT::datatable(newDsByDB,
   options = list(dom = 't', scrollX = "100%"))
 
 newDsByDt <- dbGetQuery(con, "SELECT * FROM ndb.datasettypecontrib(endperiod:=12) ORDER BY counts DESC;")
+
+datasettypes <- function(x) {
+  call <- httr::GET("http://api.neotomadb.org/v2.0/data/summary/dstypemonth",
+                    query = list(start = x, end = x + 1))
+  result <- jsonlite::fromJSON(httr::content(call, as = "text"))$data$data
+  result$month <- x
+  result$counts <- as.numeric(result$counts)
+  return(result)
+}
+
+c_trans <- function(a, b, breaks = b$breaks, format = b$format) {
+  a <- as.trans(a)
+  b <- as.trans(b)
+
+  name <- paste(a$name, b$name, sep = "-")
+
+  trans <- function(x) a$trans(b$trans(x))
+  inv <- function(x) b$inverse(a$inverse(x))
+
+  trans_new(name, trans, inv, breaks, format = format)
+}
+
+rev_date <- c_trans("reverse", "time")
+
+monthly_change <- 0:18 %>% map(datasettypes) %>% bind_rows()
+
+mc2 <- fct_collapse(monthly_change$datasettype,
+                    biomarker = "biomarker",
+                    charcoal = c("charcoal",
+                                "macrocharcoal",
+                                "microcharcoal",
+                                "charcoal surface sample"),
+                    diatom = c("diatom", "diatom surface sample"),
+                    geochemistry = "geochemistry",
+                    insect = "insect",
+                    LOI = "loss-on-ignition",
+                    macroinvertebrate = "macroinvertebrate",
+                    ostracode = c("ostracode surface sample"),
+                    sedimentology = c("physical sedimentology",
+                                      "paleomagnetic",
+                                      "X-ray fluorescence (XRF)"),
+                    "phytolith" = "phytolith",
+                    "plant macrofossil" = "plant macrofossil",
+                    pollen = c("pollen", "pollen trap",
+                              "pollen surface sample"),
+                    "stable isotope" = "specimen stable isotope",
+                    "testate amoebae" = c("testate amoebae",
+                                          "testate amoebae surface sample"),
+                    "vertebrate fauna" = "vertebrate fauna",
+                    "water chemistry" = "water chemistry")
+
+monthly_change$datasettype <- mc2
+
+monthly_out <- monthly_change %>%
+  group_by(datasettype, month) %>%
+  summarise(count = sum(counts)) %>%
+  mutate(month = (Sys.Date() %m-% months(month, abbreviate = FALSE)))
+
+out <- ggplot(monthly_out, aes(x = month, y = count, fill = datasettype)) +
+  geom_bar(stat = "identity") +
+  theme_tufte() +
+  scale_fill_viridis_d(name = "Dataset Type") +
+  scale_x_date(date_labels = "%b %Y") +
+  xlab("Month") +
+  ylab("Number of Datasets Uploaded") +
+  theme(axis.title = element_text(face = "bold", size = 18),
+        axis.text = element_text(family = "sans-serif", size = 10))
+
+ggsave("outputs/datasetsPerMonth.png", out, width = 8, height = 6, units = "in")
+ggsave("outputs/datasetsPerMonth.svg", out, width = 8, height = 6, units = "in")
 ```
 
 Of the `r lastyear$datasets` datasets added to Neotoma over the past year, there have been contributions to `r nrow(newDsByDB)`, with the majority from `r newDsByDB[1,1]`. This pattern of contribution is reflected in contributions to dataset types, where we see contributions to `r nrow(newDsByDt)` dataset types.
@@ -121,6 +191,14 @@ DT::datatable(newDsByDt,
   ),
   options = list(dom = 't', scrollX = "100%"))
 ```
+
+```{r, echo=FALSE, fig.cap="Dataset contributions to Neotoma over the previous 18 months. The large number of Neotoma dataset types makes color coding difficult, however results are detailed specifically in Table 1."}
+out
+```
+
+### Constituent Databases
+
+Neotoma consists of `r constdb` constituent databases. At any one time some databases may be more active than others.  
 
 ### Contributors
 
