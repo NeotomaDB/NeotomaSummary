@@ -16,9 +16,9 @@ output:
     theme: flatly
     css: "assets/text.css"
     toc: true
-    toc_depth: 3
+    toc_depth: 4
     toc_float: true
-    number_sections: false
+    number_sections: true
     self_contained: true
     fig_caption: true
     code_folding: hide
@@ -53,9 +53,9 @@ analystset <- dbGetQuery(con, "SELECT COUNT(DISTINCT contactid) FROM ndb.samplea
 constdb <- dbGetQuery(con, "SELECT COUNT(*) FROM ndb.constituentdatabases;")
 ```
 
-This report details changes to the database since **`r lastdate`**, and is current up to **`r lubridate::today()`**.
+This report details changes to the [Neotoma Paleoecology database](https://neotomadb.org) since **`r lastdate`**, and is current up to **`r lubridate::today()`**. Full documentation of the database can be found in the [Neotoma Database Manual](open.neotomadb.org/neotoma_bookdown/_book/index.html). Recent snapshots of the database can be obtained from the [Neotoma Snapshot website](https://neotomadb.org/snapshots). This report is generated automatically from an [RMarkdown document hosted on GitHub](https://github.com/NeotomaDB/NeotomaStats).
 
-In total Neotoma contains data from `r p(datasets)` datasets and `r p(sites)` unique sites. This represents a considerable contribution from members of the scientific community, including `r p(piset)` primary investigators, `r p(analystset)` analysts, and stewards for all `r p(constdb)` constituent databases. There are also invaluable and incalculable contributions from the members of the Neotoma Paleoecology Database Community.
+Neotoma contains data from `r p(datasets)` datasets and `r p(sites)` unique sites. This represents a considerable contribution from members of the scientific community, including `r p(piset)` primary investigators, `r p(analystset)` analysts, and stewards for all `r p(constdb)` constituent databases. There are also invaluable and incalculable contributions from the members of the Neotoma Paleoecology Database Community.
 
 ```{r dftable, echo=FALSE, fig.cap=""}
 outtable <- t(lastyear) %>% 
@@ -63,14 +63,13 @@ outtable <- t(lastyear) %>%
   rename('New Entries'='1') %>% 
   mutate('New Entries' = p(`New Entries`))
 DT::datatable(outtable, 
+  rownames = FALSE,
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
     "Table 1: ", htmltools::em("Database contributions from the prior 12 months for the Neotoma Paleoecology Database.")
   ),
   options = list(dom = 't', scrollX = "100%"))
 ```
-
-Full documentation of the database can be found in the [Neotoma Database Manual](open.neotomadb.org/neotoma_bookdown/_book/index.html). Recent snapshots of the database can be obtained from the [Neotoma Snapshot website](https://neotomadb.org/snapshots).
 
 ### Recent Data Updates
 
@@ -102,6 +101,7 @@ Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` have been 
 newDsByDB <- dbGetQuery(con, "SELECT * FROM ndb.stewardcontrib(endperiod:=12) ORDER BY counts DESC;")
 
 DT::datatable(newDsByDB,
+  rownames = FALSE,
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
     "Table 1: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by constituent database.")
@@ -185,6 +185,7 @@ Of the `r lastyear$datasets` datasets added to Neotoma over the past year, there
 
 ```{r dbcontribdst}
 DT::datatable(newDsByDt,
+  rownames = FALSE,
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
     "Table 2: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by dataset type.")
@@ -205,6 +206,7 @@ Neotoma consists of `r constdb` constituent databases. At any one time some data
 ```{r}
 newDsByCt <- dbGetQuery(con, "SELECT * FROM ndb.datasetcontribs(endperiod:=12) ORDER BY counts DESC;")
 DT::datatable(newDsByCt,
+  rownames = FALSE,
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
     "Table 1: ", htmltools::em("Dataset contributions from the prior 12 months for the Neotoma Paleoecology Database, organized by the dataset contributor.")
@@ -290,7 +292,7 @@ Several API calls are called thousands of times, but these are not necessarily t
 apiSumm %>% 
   slice_max(n, n = 20) %>% 
   select(call, n) %>% 
-  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+  DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 The slowest API calls (with the slowest *median* response time) are only shown for calls with more than 100 instances:
@@ -300,7 +302,7 @@ apiSumm %>%
   filter(n > 100) %>% 
   slice_max(time, n = 20) %>% 
   select(call, time) %>% 
-  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+  DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 ## Data Overview
@@ -323,7 +325,7 @@ siteMeta <- dbGetQuery(con, "SELECT sitename,
 missing <- colSums(is.na(siteMeta)) %>% 
   data.frame(Missing=.)
 DT::datatable(missing,
-  options = list(dom = 'tip', scrollX = "100%"))
+  options = list(dom = 'tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 Among the `r p(nrow(siteMeta))` sites added to the Neotoma Paleoecology Database in the past year, not all sites were entered with complete metadata. Complete metadata is critical for better understanding data context, particularly when site notes & descriptions are required to better understand data.
@@ -350,7 +352,7 @@ datasetMeta <- dbGetQuery(con,
 missing <- colSums(is.na(datasetMeta)) %>% 
   data.frame(Missing=.)
 DT::datatable(missing,
-  options = list(dom = 'tip', scrollX = "100%"))
+  options = list(dom = 'tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 ### Taxon Overview
@@ -376,7 +378,7 @@ The highest-level taxa can be identified because they have `taxonid==highertaxon
 
 ```{r highestOrderTaxa, echo=FALSE}
 DT::datatable(result,
-  options=list(dom='tip', scrollX = "100%"))
+  options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 This table is provided largely for information, to help identify records that are identified as "highest level", that should be otherwise grouped.
@@ -400,6 +402,7 @@ There are `r p(nrow(termCount))` taxa that represent "leaves" in the Neotoma tax
 termCount[termCount$count==0,] %>% 
   select(taxonid, taxonname, author, highertaxonid, taxagroupid,count) %>%  
   DT::datatable(extensions = 'Buttons', 
+                rownames = FALSE,
                 options = list(dom = 'Bfrtip',
                                buttons = c('csv', 'print'), 
                                scrollX = "100%")
@@ -424,6 +427,7 @@ Some taxa do not have defined `highertaxonid` values. Currently there is a count
 missCount %>% 
   select(taxonid, taxonname, author, highertaxonid, taxagroupid,count) %>%  
   DT::datatable(extensions = 'Buttons', 
+                rownames = FALSE,
                 options = list(dom = 'Bfrtip',
                                buttons = c('csv', 'print'),
                                scrollX = "100%")
@@ -462,6 +466,7 @@ Taxa are identified by `taxonname` and `taxagroupid`. There are instances of dup
 dupTxEg %>% 
   mutate(json_agg = unlist(purrr::map(dupTxEg$json_agg, prettify))) %>% 
   DT::datatable(extensions = 'Buttons', 
+                rownames = FALSE,
                 options = list(dom = 'Bfrtip',
                                buttons = c('csv', 'print'), 
                                scrollX = "100%")
@@ -499,6 +504,7 @@ It is possible to have duplicate taxon codes in the database provided the taxa a
 
 ```{r taxongroupcodetable, echo=FALSE}
 DT::datatable(dupTcEg,
+  rownames = FALSE,
   options=list(dom='tip', scrollX = "100%"))
 ```
 
@@ -555,6 +561,7 @@ SELECT * FROM dmult;"
 
 synds <- dbGetQuery(con, query)
 DT::datatable(synds,
+  rownames = FALSE,
   options=list(dom='tip', scrollX = "100%"))
 ```
 
@@ -576,6 +583,7 @@ SELECT tx.taxonid, COUNT(*), tx.taxonname FROM dmult JOIN ndb.taxa AS tx ON tx.t
 
 varthing <- dbGetQuery(con, query)
 DT::datatable(varthing,
+  rownames = FALSE,
   options=list(dom='tip', scrollX = "100%"))
 ```
 
@@ -613,7 +621,7 @@ When we examine sites, we find that there are `r p(nrow(dupTc))` sites with *exa
 dupTc %>%
   mutate(st_asgeojson = purrr::map(st_asgeojson, function(x) {
            ifelse(is.na(x), NA, prettify(x))})) %>% 
-  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+  DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 
 ```
 
@@ -629,7 +637,7 @@ missingds <- dbGetQuery(con,
      LEFT OUTER JOIN ndb.datasets AS ds ON ds.collectionunitid = cu.collectionunitid
      WHERE cu.collectionunitid IS NULL OR ds.datasetid IS NULL
      GROUP BY st.siteid, st.sitename;") %>%
-  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+  DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 This is likely the result of failed uploads during the Tilia upload process (see [Tilia upload reference here](https://github.com/NeotomaDB/tilia_api/blob/production/tiliauploadref.yaml)). To ensure that these records are properly cleaned we need to validate that there are collection units and datasets associated with the records, and, ultimately, we need to parse the records from Tilia in such a way that we are not committing individual steps within the upload process, but rather, processing the entire file at once.
@@ -647,7 +655,7 @@ dbGetQuery(con,
      LEFT OUTER JOIN ndb.datasets AS ds ON ds.collectionunitid = cu.collectionunitid
      WHERE au.analysisunitid IS NULL
      GROUP BY st.siteid, st.sitename, cu.collectionunitid;") %>%
-  DT::datatable(options=list(dom='tip', scrollX = "100%"))
+  DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 
 This is also likely the result of failed uploads during the Tilia upload process. To ensure that these records are properly cleaned we need to validate that there are collection units and datasets associated with the records, and, ultimately, we need to parse the records from Tilia in such a way that we are not committing individual steps within the upload process, but rather, processing the entire file at once.
@@ -675,7 +683,7 @@ ggplot(logTime) +
 
 ```
 
-A total of `p(nrow(tiliaLog))` calls to the Tilia API were made over the last year (for which tracking remains available). This represents the transfer of `p(round(sum(as.numeric(tiliaLog$contentlength), na.rm=TRUE) / 1000000, 0))`MB of data.
+A total of `r p(nrow(tiliaLog))` calls to the Tilia API were made over the last year (for which tracking remains available). This represents the transfer of `r p(round(sum(as.numeric(tiliaLog$contentlength), na.rm=TRUE) / 1000000, 0))`MB of data.
 
 ```{r modifyTiliaLog, echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 stewardLog <- tiliaLog %>% 
@@ -692,4 +700,4 @@ ggplot(stewardLog %>%
 
 ```
 
-Over the past year stewards accessed the database to modify data `p(nrow(stewardLog))` times. This represents access by `length(unique(stewardLog$steward))` distinct stewards.
+Over the past year stewards accessed the database to modify data `r p(nrow(stewardLog))` times. This represents access by `r length(unique(stewardLog$steward))` distinct stewards.
