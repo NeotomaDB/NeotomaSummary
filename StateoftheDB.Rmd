@@ -111,8 +111,9 @@ DT::datatable(newDsByDB,
 newDsByDt <- dbGetQuery(con, "SELECT * FROM ndb.datasettypecontrib(endperiod:=12) ORDER BY counts DESC;")
 
 datasettypes <- function(x) {
+  # We have to set a long timeout here:
   call <- httr::GET("http://api.neotomadb.org/v2.0/data/summary/dstypemonth",
-                    query = list(start = x, end = x + 1))
+                    query = list(start = x, end = x + 1), httr::timeout(10000))
   result <- jsonlite::fromJSON(httr::content(call, as = "text"))$data$data
   result$month <- x
   result$counts <- as.numeric(result$counts)
@@ -393,7 +394,6 @@ termCount <- dbGetQuery(con,
    LEFT JOIN ndb.variables AS var ON var.taxonid = tx.taxonid
    WHERE htx.taxonid IS NULL
    GROUP BY tx.taxonid")
-
 ```
 
 There are `r p(nrow(termCount))` taxa that represent "leaves" in the Neotoma taxon tree. Of these, `r p(sum(termCount$count == 0))` have no recorded counts (the `taxonid` does not appear in the `ndb.variables` table). These are taxa that are not part of a morpohotaxonomic hierarchy (so there are no dependent taxa), and also have no associated sample records:
