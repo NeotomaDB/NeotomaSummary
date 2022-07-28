@@ -227,7 +227,7 @@ pullLog <- function(filename) {
              'status'='V5', 'contentlength'='V6', 
              'responsetime'='V7', 'agent'='V8')) %>% 
     select(date, loc, status, contentlength,responsetime) %>% 
-    mutate(date = round_date(as_datetime(date), unit = 'day'))
+    mutate(date = lubridate::round_date(as_datetime(date), unit = 'day'))
   return(aa)
 }
 
@@ -663,8 +663,8 @@ This is also likely the result of failed uploads during the Tilia upload process
 ### Stewards & Tilia Usage
 
 ```{r tiliaLogs, echo=FALSE, eval=TRUE}
-# Due to security issues this section is not evaluated. We'll fix this later :)
-tiliaLog <- pullLog('~/Documents/Neotoma/logs/access.log')
+# Due to security issues this section is not evaluated. We'll fix this later
+tiliaLog <- pullLog('~/Documents/Neotoma/logs/ceiwww/tilia.neotomadb.org/node/access.log')
 
 logTime <- tiliaLog %>%
   filter(date > (lubridate::now() - years(1))) %>% 
