@@ -662,7 +662,7 @@ This is also likely the result of failed uploads during the Tilia upload process
 
 ### Stewards & Tilia Usage
 
-```{r tiliaLogs, echo=FALSE, eval=FALSE}
+```{r tiliaLogs, echo=FALSE, eval=TRUE}
 # Due to security issues this section is not evaluated. We'll fix this later :)
 tiliaLog <- pullLog('logs/access.log')
 
@@ -680,12 +680,11 @@ ggplot(logTime) +
   theme_tufte() +
   scale_y_sqrt() +
   labs(y = 'Total Tilia Calls by Day', x= 'Date of Tilia Access')
-
 ```
 
 A total of `r p(nrow(tiliaLog))` calls to the Tilia API were made over the last year (for which tracking remains available). This represents the transfer of `r p(round(sum(as.numeric(tiliaLog$contentlength), na.rm=TRUE) / 1000000, 0))`MB of data.
 
-```{r modifyTiliaLog, echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
+```{r modifyTiliaLog, echo=FALSE, message=FALSE, warning=FALSE, eval=TRUE}
 stewardLog <- tiliaLog %>% 
   mutate(steward = stringr::str_match(loc, '_username=%27(.*)%27')[,2]) %>% 
   filter(!is.na(steward))
