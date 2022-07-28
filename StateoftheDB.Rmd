@@ -664,7 +664,7 @@ This is also likely the result of failed uploads during the Tilia upload process
 
 ```{r tiliaLogs, echo=FALSE, eval=TRUE}
 # Due to security issues this section is not evaluated. We'll fix this later :)
-tiliaLog <- pullLog('logs/access.log')
+tiliaLog <- pullLog('~/Documents/Neotoma/logs/access.log')
 
 logTime <- tiliaLog %>%
   filter(date > (lubridate::now() - years(1))) %>% 
