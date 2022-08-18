@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [$1 == "local"]; then
+if [$1 == local]; then
     echo local
     export DBNAME=neotoma
     export HOST=localhost
