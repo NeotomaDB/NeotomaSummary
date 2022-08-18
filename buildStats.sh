@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [$2 = "local"]; then
+if [$1 == "local"]; then
     echo local
     export DBNAME=neotoma
     export HOST=localhost
@@ -8,6 +8,7 @@ if [$2 = "local"]; then
     export USER=postgres
     export PASSWORD=postgres
 else
+    echo $1
     export DBNAME=neotoma
     export HOST=db5.cei.psu.edu
     export PORT=5432
