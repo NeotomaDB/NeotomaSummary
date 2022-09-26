@@ -28,7 +28,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 
 library(pacman)
-p_load(lubridate, RPostgreSQL, DT, ggplot2, ggthemes, httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales)
+p_load(lubridate, RPostgreSQL, DT, ggplot2, 
+       ggthemes, svglite,
+       httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales)
 
 lastdate <- today() - years(1)
 
@@ -41,6 +43,8 @@ con <- dbConnect(dbDriver("PostgreSQL"),
 
 p <- function(x) format(x, scientific=FALSE, big.mark=',')
 ```
+
+# Data Summary
 
 ## Overall Database Summary
 
@@ -62,8 +66,7 @@ outtable <- t(lastyear) %>%
   as.data.frame %>% 
   rename('New Entries'='1') %>% 
   mutate('New Entries' = p(`New Entries`))
-DT::datatable(outtable, 
-  rownames = FALSE,
+DT::datatable(outtable,
   caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: left;',
     "Table 1: ", htmltools::em("Database contributions from the prior 12 months for the Neotoma Paleoecology Database.")
@@ -326,7 +329,7 @@ siteMeta <- dbGetQuery(con, "SELECT sitename,
 missing <- colSums(is.na(siteMeta)) %>% 
   data.frame(Missing=.)
 DT::datatable(missing,
-  options = list(dom = 'tip', scrollX = "100%"), rownames = FALSE)
+  options = list(dom = 'tip', scrollX = "100%"))
 ```
 
 Among the `r p(nrow(siteMeta))` sites added to the Neotoma Paleoecology Database in the past year, not all sites were entered with complete metadata. Complete metadata is critical for better understanding data context, particularly when site notes & descriptions are required to better understand data.
@@ -353,7 +356,7 @@ datasetMeta <- dbGetQuery(con,
 missing <- colSums(is.na(datasetMeta)) %>% 
   data.frame(Missing=.)
 DT::datatable(missing,
-  options = list(dom = 'tip', scrollX = "100%"), rownames = FALSE)
+  options = list(dom = 'tip', scrollX = "100%"))
 ```
 
 ### Taxon Overview
@@ -696,7 +699,6 @@ ggplot(stewardLog %>%
   scale_fill_viridis_d() +
   theme_tufte() + 
   labs(y = 'Steward Use By Day', x= 'Date of Steward Access')
-
 ```
 
 Over the past year stewards accessed the database to modify data `r p(nrow(stewardLog))` times. This represents access by `r length(unique(stewardLog$steward))` distinct stewards.
