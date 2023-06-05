@@ -78,22 +78,22 @@ DT::datatable(outtable,
 
 #### Site Additions
 
-```{r plotSites, eval=FALSE, echo=FALSE, warning=FALSE, fig.cap='**Figure 1.** *Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)*.'}
+```{r plotSites, echo=FALSE, warning=FALSE, fig.cap='**Figure 1.** *Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)*.'}
 
 newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.sites WHERE recdatecreated > now() - interval '1 year'") %>% unlist()
 
 shape <- newSites %>% stringr::str_detect('Polygon')
 
-sf <- geojson_sf(newSites) %>% st_cast("POINT")
+#sf <- geojson_sf(newSites) %>% st_cast("POINT")
 
-map <- leaflet::leaflet(sf) %>% 
-  addProviderTiles("Stamen.Watercolor") %>%
-  leaflet::addCircleMarkers(color='red',
-                            stroke = FALSE,
-                            fillOpacity = 0.6,
-                            clusterOptions = markerClusterOptions())
+#map <- leaflet::leaflet(sf) %>% 
+#  addProviderTiles("Stamen.Watercolor") %>%
+#  leaflet::addCircleMarkers(color='red',
+#                            stroke = FALSE,
+#                            fillOpacity = 0.6,
+#                            clusterOptions = markerClusterOptions())
 
-map
+#map
 ```
 
 Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` have been entered as polygons, while `r p(sum(shape == FALSE))` are entered as single coordinate points. In general polygons provide more complete information about the site, often representing the particular shape of the depositional environment (lake, archaeological site).
