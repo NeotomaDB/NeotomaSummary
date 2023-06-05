@@ -78,7 +78,7 @@ DT::datatable(outtable,
 
 #### Site Additions
 
-```{r plotSites, echo=FALSE, warning=FALSE, fig.cap="**Figure 1.** *Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)*."}
+```{r plotSites, echo=FALSE, warning=FALSE, fig.cap='**Figure 1.** *Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)*.'}
 
 newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.sites WHERE recdatecreated > now() - interval '1 year'") %>% unlist()
 
