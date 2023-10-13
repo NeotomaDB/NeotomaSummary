@@ -30,7 +30,8 @@ knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 library(pacman)
 p_load(lubridate, RPostgreSQL, DT, ggplot2, 
        ggthemes, svglite,
-       httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales)
+       httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales,
+       leaflet.providers)
 
 lastdate <- today() - years(1)
 
@@ -80,14 +81,18 @@ DT::datatable(outtable,
 
 ```{r plotSites, echo=FALSE, warning=FALSE, fig.cap='**Figure 1.** *Locations of newly added sites in Neotoma during the past year. The map is interactive and supports zoom/pan operations. Individual sites can be selected and you will be directed to a link for the [Neotoma Explorer](https://apps.neotomadb.org)*.'}
 
-newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.sites WHERE recdatecreated > now() - interval '1 year'") %>% unlist()
+use_providers()
+
+newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.sites WHERE recdatecreated > now() - interval '1 year'") %>% 
+  unlist() %>%
+  na.omit()
 
 shape <- newSites %>% stringr::str_detect('Polygon')
 
 sf <- geojson_sf(newSites) %>% st_cast("POINT")
 
 map <- leaflet::leaflet(sf) %>% 
-  addProviderTiles("Stamen.Watercolor") %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
   leaflet::addCircleMarkers(color='red',
                             stroke = FALSE,
                             fillOpacity = 0.6,
