@@ -84,16 +84,16 @@ newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.
 
 shape <- newSites %>% stringr::str_detect('Polygon')
 
-#sf <- geojson_sf(newSites) %>% st_cast("POINT")
+sf <- geojson_sf(newSites) %>% st_cast("POINT")
 
-#map <- leaflet::leaflet(sf) %>% 
-#  addProviderTiles("Stamen.Watercolor") %>%
-#  leaflet::addCircleMarkers(color='red',
-#                            stroke = FALSE,
-#                            fillOpacity = 0.6,
-#                            clusterOptions = markerClusterOptions())
+map <- leaflet::leaflet(sf) %>% 
+  addProviderTiles("Stamen.Watercolor") %>%
+  leaflet::addCircleMarkers(color='red',
+                            stroke = FALSE,
+                            fillOpacity = 0.6,
+                            clusterOptions = markerClusterOptions())
 
-#map
+map
 ```
 
 Of the `r p(length(newSites))` sites added, `r p(sum(shape == TRUE))` have been entered as polygons, while `r p(sum(shape == FALSE))` are entered as single coordinate points. In general polygons provide more complete information about the site, often representing the particular shape of the depositional environment (lake, archaeological site).
