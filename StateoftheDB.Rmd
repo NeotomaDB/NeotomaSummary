@@ -89,7 +89,7 @@ newSites <- dbGetQuery(con, "SELECT ST_AsGeoJSON(geog)::varchar AS loc FROM ndb.
 
 shape <- newSites %>% stringr::str_detect('Polygon')
 
-sf <- geojson_sf(newSites) %>% st_cast("POINT")
+sf <- geojson_sf(newSites) %>% sf::st_cast("POINT")
 
 map <- leaflet::leaflet(sf) %>% 
   addProviderTiles(providers$CartoDB.Positron) %>%
