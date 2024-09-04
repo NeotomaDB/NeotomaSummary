@@ -31,7 +31,9 @@ library(pacman)
 p_load(lubridate, RPostgreSQL, DT, ggplot2, 
        ggthemes, svglite,
        httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales,
-       leaflet.providers)
+       leaflet.providers, dotenv)
+
+load_dot_env()
 
 lastdate <- today() - years(1)
 
@@ -227,33 +229,27 @@ Neotoma relies on significant the efforts of a volunteer group of data stewards 
 
 ### API Calls
 
-```{r pullLogs, echo=FALSE, fig.caption="Volume of API calls to API and Tilia servers, aggregated by day over the last 12 months."}
-pullLog <- function(filename) {
-  aa <- read.delim(filename, 
-                   header = FALSE) %>% 
-    rename(c('date'='V1', 'ip'='V2', 'verb'='V3', 'loc'='V4', 
-             'status'='V5', 'contentlength'='V6', 
-             'responsetime'='V7', 'agent'='V8')) %>% 
-    select(date, loc, status, contentlength,responsetime) %>% 
-    mutate(date = lubridate::round_date(as_datetime(date), unit = 'day'))
-  return(aa)
-}
+```{r pullLogs, echo=FALSE, fig.caption="Volume of API calls to API and Tilia servers, aggregated by day over the last 6 months."}
+pullLog <- jsonlite::fromJSON('log_run.json')['results'][[1]] %>%
+  purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
+  bind_rows() %>%
+  mutate(date = lubridate::date(date),
+    calls = as.integer(calls),
+    volume = as.integer(volume))
 
-apiOut <- pullLog('../logs/ceiwww/api.neotomadb.org/node/access.log') %>% na.omit()
+pullCalls <- jsonlite::fromJSON('log_run_calls.json')['results'][[1]] %>%
+  purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
+  bind_rows() %>%
+  mutate(calls = as.integer(calls),
+    path = stringr::str_replace(path, '/[0-9,]*$', '')) %>%
+  group_by(path) %>%
+  summarize(fullcount = sum(calls)) %>%
+  arrange(desc(fullcount))
 
-logTime <- apiOut %>%
-  filter(date > (lubridate::now() - years(1))) %>% 
-  mutate(explorer = stringr::str_detect(string = loc,
-                                        pattern='.*dojo.*')) %>% 
-  group_by(date, explorer)  %>% 
-  summarise(n=n())
-
-logTime$unsplorer <- ifelse(logTime$explorer, "Explorer", "Core API")
-
-ggplot(logTime) +
-  geom_bar(aes(x = date, 
-               y = n,
-               fill = unsplorer),
+ggplot(pullLog) +
+  geom_bar(aes(x = date,
+               y = calls,
+               fill = explorerCall),
            position = 'stack', 
            stat = 'identity') +
   scale_fill_viridis_d() +
@@ -263,33 +259,16 @@ ggplot(logTime) +
 
 ```
 
-Since the API has been implemented there have been a total of `r p(sum(logTime$n))` calls to the Neotoma API. These include calls to the core API ([`api.neotomadb.org`](https://api.neotomadb.org)), calls to support the Neotoma Landing Pages ([`data.neotomadb.org`](https://data.neotomadb.org)) and calls to support Neotoma Explorer ([`apps.neotomadb.org/explorer`](https://data.neotomadb.org)).
+Since the API has been implemented there have been a total of `r p(sum(pullLog$calls))` calls to the Neotoma API. These include calls to the core API ([`api.neotomadb.org`](https://api.neotomadb.org)), calls to support the Neotoma Landing Pages ([`data.neotomadb.org`](https://data.neotomadb.org)) and calls to support Neotoma Explorer ([`apps.neotomadb.org/explorer`](https://data.neotomadb.org)).
 
-The main APIs delivered a total of `r p(floor(sum(as.numeric(apiOut$contentlength), na.rm=TRUE) /1000000000))` GB of data to users over the last year, with the most significant payload beginning in approximately October 2020.
-
-Average response time for the web services was `r p(floor(mean(as.numeric(apiOut$responsetime), na.rm=TRUE)))`ms, with a maximum response time of `r p(floor(max(as.numeric(apiOut$responsetime), na.rm=TRUE)) / 1000)`sec. Approximately `r p(round(sum((as.numeric(apiOut$responsetime) > 1000), na.rm=TRUE) / nrow(apiOut) * 100, 2))`% of all responses took more than one second to return data.
+The main APIs delivered a total of `r p(floor(sum(pullLog$volume, na.rm=TRUE) /1000000000))` GB of data to users since `r min(pullLog$date)`.
 
 #### Specific API Calls
 
 ```{r callFrequency, echo=FALSE, warning=FALSE}
-apiCleaned <- apiOut %>% 
-  mutate(call = purrr::map(loc, 
-                           function(x) strsplit(x, '\\?')[[1]][1])) %>% 
-  mutate(call = stringr::str_replace(call, '\\/(\\d,*)+\\/*', '/{n}/')) %>% 
-  mutate(call = stringr::str_replace(call, '\\/$', ''),
-         contentlength = as.numeric(contentlength),
-         responsetime = as.numeric(responsetime)) %>% 
-  mutate(call = tolower(call))
-
-apiSumm <- apiCleaned %>% 
-  group_by(call) %>% 
-  summarise(n = n(),
-            length=sum(contentlength, na.rm=TRUE),
-            time = median(responsetime, na.rm=TRUE))
-
-ggplot((apiSumm %>% arrange(desc(n)))[1:20,]) +
+ggplot(pullCalls[1:20,]) +
   geom_bar(aes(x = 1:20, 
-               y=n/1000), stat='identity') +
+               y=fullcount/1000), stat='identity') +
   theme_tufte() +
   labs(x='', y='Thousands of Calls') +
   theme(axis.text.x=element_blank())
@@ -299,18 +278,8 @@ Several API calls are called thousands of times, but these are not necessarily t
 
 ```{r freqCall, echo=FALSE}
 apiSumm %>% 
-  slice_max(n, n = 20) %>% 
-  select(call, n) %>% 
-  DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
-```
-
-The slowest API calls (with the slowest *median* response time) are only shown for calls with more than 100 instances:
-
-```{r slowestAPICalls}
-apiSumm %>% 
-  filter(n > 100) %>% 
-  slice_max(time, n = 20) %>% 
-  select(call, time) %>% 
+  slice_max(fullcount, n = 20) %>% 
+  select(call, fullcount) %>% 
   DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 

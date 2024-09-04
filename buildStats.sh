@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash run_cloudwatchquery.sh
+
 if [ "$1" == "local" ]; then
     echo Running against the local DB.
     export DBNAME=neotoma
