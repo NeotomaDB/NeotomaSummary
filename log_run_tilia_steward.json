@@ -1,0 +1,70 @@
+{
+    "results": [
+        [
+            {
+                "field": "loggingSteward",
+                "value": "mbarbier"
+            },
+            {
+                "field": "count",
+                "value": "10"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "aherbert"
+            },
+            {
+                "field": "count",
+                "value": "4"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "nsevans"
+            },
+            {
+                "field": "count",
+                "value": "4"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "wfinsinger"
+            },
+            {
+                "field": "count",
+                "value": "2"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "sivory"
+            },
+            {
+                "field": "count",
+                "value": "2"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "swolters"
+            },
+            {
+                "field": "count",
+                "value": "4"
+            }
+        ]
+    ],
+    "statistics": {
+        "recordsMatched": 26.0,
+        "recordsScanned": 30345.0,
+        "bytesScanned": 7100244.0
+    },
+    "status": "Complete"
+}

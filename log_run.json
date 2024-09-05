@@ -11,11 +11,11 @@
             },
             {
                 "field": "calls",
-                "value": "1560"
+                "value": "1760"
             },
             {
                 "field": "volume",
-                "value": "28668004"
+                "value": "34772083"
             }
         ],
         [
@@ -3197,11 +3197,11 @@
             },
             {
                 "field": "calls",
-                "value": "6117"
+                "value": "7033"
             },
             {
                 "field": "volume",
-                "value": "20103820"
+                "value": "22479210"
             }
         ],
         [
@@ -6392,9 +6392,9 @@
         ]
     ],
     "statistics": {
-        "recordsMatched": 1850650.0,
-        "recordsScanned": 4193822.0,
-        "bytesScanned": 1268804244.0
+        "recordsMatched": 1851766.0,
+        "recordsScanned": 4196160.0,
+        "bytesScanned": 1269540778.0
     },
     "status": "Complete"
 }
