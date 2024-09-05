@@ -277,9 +277,9 @@ ggplot(pullCalls[1:20,]) +
 Several API calls are called thousands of times, but these are not necessarily the fastest, or slowest queries. There is no relationship between speed and the number of times an API endpoint is used. The most frequent API calls are:
 
 ```{r freqCall, echo=FALSE}
-apiSumm %>% 
+pullCalls %>% 
   slice_max(fullcount, n = 20) %>% 
-  select(call, fullcount) %>% 
+  select(path, fullcount) %>% 
   DT::datatable(options=list(dom='tip', scrollX = "100%"), rownames = FALSE)
 ```
 
@@ -640,17 +640,15 @@ This is also likely the result of failed uploads during the Tilia upload process
 ### Stewards & Tilia Usage
 
 ```{r tiliaLogs, echo=FALSE, eval=TRUE}
-# Due to security issues this section is not evaluated. We'll fix this later
-tiliaLog <- pullLog('~/Documents/Neotoma/logs/ceiwww/tilia.neotomadb.org/node/access.log')
-
-logTime <- tiliaLog %>%
-  filter(date > (lubridate::now() - years(1))) %>% 
-  group_by(date)  %>% 
-  summarise(n=n())
+logTime <- jsonlite::fromJSON('log_run_tilia.json')['results'][[1]] %>%
+  purrr::map(function(x) tidyr::pivot_wider(x, names_from=field)) %>%
+  bind_rows() %>%
+  mutate(date = lubridate::date(date),
+    calls = as.integer(calls))
 
 ggplot(logTime) +
   geom_bar(aes(x = date, 
-               y = n),
+               y = calls),
            position = 'stack', 
            stat = 'identity') +
   scale_fill_viridis_d() +
@@ -659,20 +657,4 @@ ggplot(logTime) +
   labs(y = 'Total Tilia Calls by Day', x= 'Date of Tilia Access')
 ```
 
-A total of `r p(nrow(tiliaLog))` calls to the Tilia API were made over the last year (for which tracking remains available). This represents the transfer of `r p(round(sum(as.numeric(tiliaLog$contentlength), na.rm=TRUE) / 1000000, 0))`MB of data.
-
-```{r modifyTiliaLog, echo=FALSE, message=FALSE, warning=FALSE, eval=TRUE}
-stewardLog <- tiliaLog %>% 
-  mutate(steward = stringr::str_match(loc, '_username=%27(.*)%27')[,2]) %>% 
-  filter(!is.na(steward))
-
-ggplot(stewardLog %>% 
-  group_by(date, steward) %>% 
-  summarise(n=length(unique(steward)))) +
-  geom_bar(aes(x=date, y = n), stat="identity") +
-  scale_fill_viridis_d() +
-  theme_tufte() + 
-  labs(y = 'Steward Use By Day', x= 'Date of Steward Access')
-```
-
-Over the past year stewards accessed the database to modify data `r p(nrow(stewardLog))` times. This represents access by `r length(unique(stewardLog$steward))` distinct stewards.
+A total of `r p(sum(logTime$calls))` calls to the Tilia API were made since `r min(logTime$date)`.

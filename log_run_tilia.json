@@ -1,0 +1,50 @@
+{
+    "results": [
+        [
+            {
+                "field": "date",
+                "value": "2024-09-04 00:00:00.000"
+            },
+            {
+                "field": "calls",
+                "value": "1203"
+            }
+        ],
+        [
+            {
+                "field": "date",
+                "value": "2024-09-03 00:00:00.000"
+            },
+            {
+                "field": "calls",
+                "value": "2476"
+            }
+        ],
+        [
+            {
+                "field": "date",
+                "value": "2024-09-02 00:00:00.000"
+            },
+            {
+                "field": "calls",
+                "value": "1313"
+            }
+        ],
+        [
+            {
+                "field": "date",
+                "value": "2024-09-01 00:00:00.000"
+            },
+            {
+                "field": "calls",
+                "value": "214"
+            }
+        ]
+    ],
+    "statistics": {
+        "recordsMatched": 5206.0,
+        "recordsScanned": 30331.0,
+        "bytesScanned": 7097778.0
+    },
+    "status": "Complete"
+}
