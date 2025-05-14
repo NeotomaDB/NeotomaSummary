@@ -3,48 +3,48 @@
         [
             {
                 "field": "date",
-                "value": "2024-09-04 00:00:00.000"
+                "value": "2025-05-14 00:00:00.000"
             },
             {
                 "field": "calls",
-                "value": "1203"
+                "value": "996"
             }
         ],
         [
             {
                 "field": "date",
-                "value": "2024-09-03 00:00:00.000"
+                "value": "2025-05-13 00:00:00.000"
             },
             {
                 "field": "calls",
-                "value": "2476"
+                "value": "26"
             }
         ],
         [
             {
                 "field": "date",
-                "value": "2024-09-02 00:00:00.000"
+                "value": "2025-05-12 00:00:00.000"
             },
             {
                 "field": "calls",
-                "value": "1313"
+                "value": "7372"
             }
         ],
         [
             {
                 "field": "date",
-                "value": "2024-09-01 00:00:00.000"
+                "value": "2025-05-11 00:00:00.000"
             },
             {
                 "field": "calls",
-                "value": "214"
+                "value": "48"
             }
         ]
     ],
     "statistics": {
-        "recordsMatched": 5206.0,
-        "recordsScanned": 30331.0,
-        "bytesScanned": 7097778.0
+        "recordsMatched": 8442.0,
+        "recordsScanned": 42616.0,
+        "bytesScanned": 9825486.0
     },
     "status": "Complete"
 }
