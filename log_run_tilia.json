@@ -3,6 +3,16 @@
         [
             {
                 "field": "date",
+                "value": "2025-05-15 00:00:00.000"
+            },
+            {
+                "field": "calls",
+                "value": "1007"
+            }
+        ],
+        [
+            {
+                "field": "date",
                 "value": "2025-05-14 00:00:00.000"
             },
             {
@@ -19,32 +29,12 @@
                 "field": "calls",
                 "value": "26"
             }
-        ],
-        [
-            {
-                "field": "date",
-                "value": "2025-05-12 00:00:00.000"
-            },
-            {
-                "field": "calls",
-                "value": "7372"
-            }
-        ],
-        [
-            {
-                "field": "date",
-                "value": "2025-05-11 00:00:00.000"
-            },
-            {
-                "field": "calls",
-                "value": "48"
-            }
         ]
     ],
     "statistics": {
-        "recordsMatched": 8442.0,
-        "recordsScanned": 42616.0,
-        "bytesScanned": 9825486.0
+        "recordsMatched": 2029.0,
+        "recordsScanned": 66382.0,
+        "bytesScanned": 16480475.0
     },
     "status": "Complete"
 }
