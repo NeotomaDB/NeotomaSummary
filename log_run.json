@@ -7,15 +7,33 @@
             },
             {
                 "field": "date",
+                "value": "2025-05-15 00:00:00.000"
+            },
+            {
+                "field": "calls",
+                "value": "2230"
+            },
+            {
+                "field": "volume",
+                "value": "39135128"
+            }
+        ],
+        [
+            {
+                "field": "explorerCall",
+                "value": "1"
+            },
+            {
+                "field": "date",
                 "value": "2025-05-14 00:00:00.000"
             },
             {
                 "field": "calls",
-                "value": "1646"
+                "value": "2533"
             },
             {
                 "field": "volume",
-                "value": "41005520"
+                "value": "65791587"
             }
         ],
         [
@@ -119,29 +137,29 @@
             },
             {
                 "field": "calls",
-                "value": "2827"
+                "value": "230"
             },
             {
                 "field": "volume",
-                "value": "45753077"
+                "value": "10497185"
             }
         ],
         [
             {
                 "field": "explorerCall",
-                "value": "1"
+                "value": "0"
             },
             {
                 "field": "date",
-                "value": "2025-05-07 00:00:00.000"
+                "value": "2025-05-15 00:00:00.000"
             },
             {
                 "field": "calls",
-                "value": "305"
+                "value": "4389"
             },
             {
                 "field": "volume",
-                "value": "7501246"
+                "value": "28467660"
             }
         ],
         [
@@ -155,11 +173,11 @@
             },
             {
                 "field": "calls",
-                "value": "2406"
+                "value": "385447"
             },
             {
                 "field": "volume",
-                "value": "31259043"
+                "value": "1080476450"
             }
         ],
         [
@@ -263,36 +281,18 @@
             },
             {
                 "field": "calls",
-                "value": "5449"
+                "value": "495"
             },
             {
                 "field": "volume",
-                "value": "31451807"
-            }
-        ],
-        [
-            {
-                "field": "explorerCall",
-                "value": "0"
-            },
-            {
-                "field": "date",
-                "value": "2025-05-07 00:00:00.000"
-            },
-            {
-                "field": "calls",
-                "value": "594"
-            },
-            {
-                "field": "volume",
-                "value": "6384498"
+                "value": "12022669"
             }
         ]
     ],
     "statistics": {
-        "recordsMatched": 50273.0,
-        "recordsScanned": 123325.0,
-        "bytesScanned": 33610014.0
+        "recordsMatched": 432370.0,
+        "recordsScanned": 506445.0,
+        "bytesScanned": 125019621.0
     },
     "status": "Complete"
 }

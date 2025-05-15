@@ -13,21 +13,41 @@
         [
             {
                 "field": "loggingSteward",
-                "value": "wfinsinger"
-            },
-            {
-                "field": "count",
-                "value": "6"
-            }
-        ],
-        [
-            {
-                "field": "loggingSteward",
                 "value": "swolters"
             },
             {
                 "field": "count",
                 "value": "4"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "wfinsinger"
+            },
+            {
+                "field": "count",
+                "value": "4"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "cmorales"
+            },
+            {
+                "field": "count",
+                "value": "2"
+            }
+        ],
+        [
+            {
+                "field": "loggingSteward",
+                "value": "tgiesecke"
+            },
+            {
+                "field": "count",
+                "value": "2"
             }
         ],
         [
@@ -39,22 +59,12 @@
                 "field": "count",
                 "value": "2"
             }
-        ],
-        [
-            {
-                "field": "loggingSteward",
-                "value": "ajsmith"
-            },
-            {
-                "field": "count",
-                "value": "2"
-            }
         ]
     ],
     "statistics": {
         "recordsMatched": 20.0,
-        "recordsScanned": 42619.0,
-        "bytesScanned": 9826329.0
+        "recordsScanned": 66384.0,
+        "bytesScanned": 16481091.0
     },
     "status": "Complete"
 }
