@@ -3,7 +3,7 @@ pacman::p_load(
     forcats,
     rmarkdown,
     purrr,
-    RPostgreSQL,
+    RPostgres,
     DT,
     ggplot2,
     ggthemes,
