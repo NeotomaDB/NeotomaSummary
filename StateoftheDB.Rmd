@@ -2,11 +2,11 @@
 title: "State of the Neotoma Paleoecology Database"
 shorttitle: "Neotoma Status"
 author:
+  - name: "Socorro Dominguez"
+    email: "dominguezvid@wisc.edu"
+    affiliation: "Department of Geography, University of Wisconsin--Madison"
   - name: "Simon Goring"
-    email: "goring@wisc.edu"
-  - affiliation:
-    - id: "1"
-      institution: "Department of Geography, University of Wisconsin--Madison"
+    affiliation: "Department of Geography, University of Wisconsin--Madison"
 date: "`r lubridate::today()`"
 description: |
   A summary of current Neotoma activity, potential data issues and other summary information.
@@ -39,11 +39,11 @@ lastdate <- today() - years(1)
 
 con <- dbConnect(
   Postgres(),
-  host     = "localhost",
-  port     = 5555,
-  dbname   = "neotoma",
-  user     = "neotomaAdmin",
-  password = Sys.getenv("PGPASSWORD"),
+  host     = Sys.getenv("HOST"),
+  port     = Sys.getenv("PORT"),
+  dbname   = Sys.getenv("DBNAME"),
+  user     = Sys.getenv("USER"),
+  password = Sys.getenv("PASSWORD"),
   sslmode  = "require"
 )
 
