@@ -1,0 +1,8861 @@
+{
+  "results": [
+    [
+      {
+        "field": "date",
+        "value": "2025-11-09"
+      },
+      {
+        "field": "calls",
+        "value": "385"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "227"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-10"
+      },
+      {
+        "field": "calls",
+        "value": "20882"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "17393"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-10"
+      },
+      {
+        "field": "calls",
+        "value": "4901"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4857"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-11"
+      },
+      {
+        "field": "calls",
+        "value": "12428"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10958"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-11"
+      },
+      {
+        "field": "calls",
+        "value": "5692"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5326"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-12"
+      },
+      {
+        "field": "calls",
+        "value": "10545"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8804"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-12"
+      },
+      {
+        "field": "calls",
+        "value": "2084"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2054"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-13"
+      },
+      {
+        "field": "calls",
+        "value": "13755"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11721"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-13"
+      },
+      {
+        "field": "calls",
+        "value": "3226"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3180"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-14"
+      },
+      {
+        "field": "calls",
+        "value": "15008"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13382"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-14"
+      },
+      {
+        "field": "calls",
+        "value": "471"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "401"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-15"
+      },
+      {
+        "field": "calls",
+        "value": "12259"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10574"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-15"
+      },
+      {
+        "field": "calls",
+        "value": "719"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "71"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-16"
+      },
+      {
+        "field": "calls",
+        "value": "7325"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5754"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-16"
+      },
+      {
+        "field": "calls",
+        "value": "340"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "306"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-17"
+      },
+      {
+        "field": "calls",
+        "value": "21968"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18115"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-17"
+      },
+      {
+        "field": "calls",
+        "value": "1190"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1173"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-18"
+      },
+      {
+        "field": "calls",
+        "value": "26885"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22011"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-18"
+      },
+      {
+        "field": "calls",
+        "value": "3593"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3556"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-19"
+      },
+      {
+        "field": "calls",
+        "value": "31213"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "26049"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-19"
+      },
+      {
+        "field": "calls",
+        "value": "3111"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2946"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-20"
+      },
+      {
+        "field": "calls",
+        "value": "21550"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "19049"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-20"
+      },
+      {
+        "field": "calls",
+        "value": "1390"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1389"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-21"
+      },
+      {
+        "field": "calls",
+        "value": "11648"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9785"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-21"
+      },
+      {
+        "field": "calls",
+        "value": "547"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "545"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-22"
+      },
+      {
+        "field": "calls",
+        "value": "10463"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8526"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-22"
+      },
+      {
+        "field": "calls",
+        "value": "651"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "460"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-23"
+      },
+      {
+        "field": "calls",
+        "value": "26291"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22125"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-23"
+      },
+      {
+        "field": "calls",
+        "value": "3000"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2825"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-24"
+      },
+      {
+        "field": "calls",
+        "value": "49163"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "41532"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-24"
+      },
+      {
+        "field": "calls",
+        "value": "1122"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1118"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-25"
+      },
+      {
+        "field": "calls",
+        "value": "33587"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "29801"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-25"
+      },
+      {
+        "field": "calls",
+        "value": "769"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "634"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-26"
+      },
+      {
+        "field": "calls",
+        "value": "13640"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12544"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-26"
+      },
+      {
+        "field": "calls",
+        "value": "1047"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "912"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-27"
+      },
+      {
+        "field": "calls",
+        "value": "9960"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7902"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-27"
+      },
+      {
+        "field": "calls",
+        "value": "24"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-28"
+      },
+      {
+        "field": "calls",
+        "value": "9823"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8358"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-28"
+      },
+      {
+        "field": "calls",
+        "value": "408"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "398"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-29"
+      },
+      {
+        "field": "calls",
+        "value": "9682"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8277"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-29"
+      },
+      {
+        "field": "calls",
+        "value": "629"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "452"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-30"
+      },
+      {
+        "field": "calls",
+        "value": "9425"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7856"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-11-30"
+      },
+      {
+        "field": "calls",
+        "value": "1021"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "971"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-01"
+      },
+      {
+        "field": "calls",
+        "value": "13631"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9738"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-01"
+      },
+      {
+        "field": "calls",
+        "value": "858"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "832"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-02"
+      },
+      {
+        "field": "calls",
+        "value": "15556"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11538"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-02"
+      },
+      {
+        "field": "calls",
+        "value": "429"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "332"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-03"
+      },
+      {
+        "field": "calls",
+        "value": "22133"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "20261"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-03"
+      },
+      {
+        "field": "calls",
+        "value": "1102"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "470"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-04"
+      },
+      {
+        "field": "calls",
+        "value": "27420"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "23134"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-04"
+      },
+      {
+        "field": "calls",
+        "value": "1066"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "701"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-05"
+      },
+      {
+        "field": "calls",
+        "value": "7996"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6412"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-05"
+      },
+      {
+        "field": "calls",
+        "value": "212"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "194"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-06"
+      },
+      {
+        "field": "calls",
+        "value": "8430"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7203"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-06"
+      },
+      {
+        "field": "calls",
+        "value": "29"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-07"
+      },
+      {
+        "field": "calls",
+        "value": "15570"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13948"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-07"
+      },
+      {
+        "field": "calls",
+        "value": "925"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "863"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-08"
+      },
+      {
+        "field": "calls",
+        "value": "7185"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5381"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-08"
+      },
+      {
+        "field": "calls",
+        "value": "437"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "211"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-09"
+      },
+      {
+        "field": "calls",
+        "value": "9082"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7763"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-09"
+      },
+      {
+        "field": "calls",
+        "value": "1952"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1642"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-10"
+      },
+      {
+        "field": "calls",
+        "value": "10757"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9565"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-10"
+      },
+      {
+        "field": "calls",
+        "value": "753"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "729"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-11"
+      },
+      {
+        "field": "calls",
+        "value": "12532"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11006"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-11"
+      },
+      {
+        "field": "calls",
+        "value": "2417"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2280"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-12"
+      },
+      {
+        "field": "calls",
+        "value": "18312"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14493"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-12"
+      },
+      {
+        "field": "calls",
+        "value": "1575"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1450"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-13"
+      },
+      {
+        "field": "calls",
+        "value": "22764"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "19311"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-13"
+      },
+      {
+        "field": "calls",
+        "value": "1833"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "216"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-14"
+      },
+      {
+        "field": "calls",
+        "value": "17717"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15826"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-14"
+      },
+      {
+        "field": "calls",
+        "value": "1042"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "935"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-15"
+      },
+      {
+        "field": "calls",
+        "value": "12879"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11224"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-15"
+      },
+      {
+        "field": "calls",
+        "value": "3499"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3407"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-16"
+      },
+      {
+        "field": "calls",
+        "value": "10637"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6810"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-16"
+      },
+      {
+        "field": "calls",
+        "value": "3310"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3019"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-17"
+      },
+      {
+        "field": "calls",
+        "value": "16225"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13224"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-17"
+      },
+      {
+        "field": "calls",
+        "value": "2204"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1561"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-18"
+      },
+      {
+        "field": "calls",
+        "value": "12605"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11131"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-18"
+      },
+      {
+        "field": "calls",
+        "value": "1483"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1466"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-19"
+      },
+      {
+        "field": "calls",
+        "value": "4405"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3382"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-19"
+      },
+      {
+        "field": "calls",
+        "value": "375"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "354"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-20"
+      },
+      {
+        "field": "calls",
+        "value": "4688"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3657"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-20"
+      },
+      {
+        "field": "calls",
+        "value": "325"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "131"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-21"
+      },
+      {
+        "field": "calls",
+        "value": "7174"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6032"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-21"
+      },
+      {
+        "field": "calls",
+        "value": "1114"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1006"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-22"
+      },
+      {
+        "field": "calls",
+        "value": "6515"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5355"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-22"
+      },
+      {
+        "field": "calls",
+        "value": "2095"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2081"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-23"
+      },
+      {
+        "field": "calls",
+        "value": "7700"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6420"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-23"
+      },
+      {
+        "field": "calls",
+        "value": "112"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "105"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-24"
+      },
+      {
+        "field": "calls",
+        "value": "6584"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5664"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-24"
+      },
+      {
+        "field": "calls",
+        "value": "197"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "31"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-25"
+      },
+      {
+        "field": "calls",
+        "value": "8448"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7046"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-25"
+      },
+      {
+        "field": "calls",
+        "value": "389"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "280"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-26"
+      },
+      {
+        "field": "calls",
+        "value": "9928"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8925"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-26"
+      },
+      {
+        "field": "calls",
+        "value": "333"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "164"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-27"
+      },
+      {
+        "field": "calls",
+        "value": "7064"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5411"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-27"
+      },
+      {
+        "field": "calls",
+        "value": "398"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "381"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-28"
+      },
+      {
+        "field": "calls",
+        "value": "9196"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7922"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-28"
+      },
+      {
+        "field": "calls",
+        "value": "1202"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1196"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-29"
+      },
+      {
+        "field": "calls",
+        "value": "8555"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6487"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-29"
+      },
+      {
+        "field": "calls",
+        "value": "1042"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "838"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-30"
+      },
+      {
+        "field": "calls",
+        "value": "12237"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10633"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-30"
+      },
+      {
+        "field": "calls",
+        "value": "447"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "243"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-31"
+      },
+      {
+        "field": "calls",
+        "value": "8271"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7525"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2025-12-31"
+      },
+      {
+        "field": "calls",
+        "value": "4140"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3971"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-01"
+      },
+      {
+        "field": "calls",
+        "value": "16855"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15679"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-01"
+      },
+      {
+        "field": "calls",
+        "value": "60"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "34"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-02"
+      },
+      {
+        "field": "calls",
+        "value": "14070"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13372"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-02"
+      },
+      {
+        "field": "calls",
+        "value": "2775"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2716"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-03"
+      },
+      {
+        "field": "calls",
+        "value": "18862"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16789"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-03"
+      },
+      {
+        "field": "calls",
+        "value": "2304"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2288"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-04"
+      },
+      {
+        "field": "calls",
+        "value": "16281"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15125"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-04"
+      },
+      {
+        "field": "calls",
+        "value": "1005"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "954"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-05"
+      },
+      {
+        "field": "calls",
+        "value": "17633"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14875"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-05"
+      },
+      {
+        "field": "calls",
+        "value": "3059"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2867"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-06"
+      },
+      {
+        "field": "calls",
+        "value": "17069"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15732"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-06"
+      },
+      {
+        "field": "calls",
+        "value": "2286"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2110"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-07"
+      },
+      {
+        "field": "calls",
+        "value": "15198"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13934"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-07"
+      },
+      {
+        "field": "calls",
+        "value": "960"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "938"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-08"
+      },
+      {
+        "field": "calls",
+        "value": "13590"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11967"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-08"
+      },
+      {
+        "field": "calls",
+        "value": "2129"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2113"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-09"
+      },
+      {
+        "field": "calls",
+        "value": "6435"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5543"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-09"
+      },
+      {
+        "field": "calls",
+        "value": "449"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "435"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-10"
+      },
+      {
+        "field": "calls",
+        "value": "6070"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4611"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-10"
+      },
+      {
+        "field": "calls",
+        "value": "4926"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4546"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-11"
+      },
+      {
+        "field": "calls",
+        "value": "6981"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5410"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-11"
+      },
+      {
+        "field": "calls",
+        "value": "2533"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2298"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-12"
+      },
+      {
+        "field": "calls",
+        "value": "20466"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "19092"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-12"
+      },
+      {
+        "field": "calls",
+        "value": "678"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "578"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-13"
+      },
+      {
+        "field": "calls",
+        "value": "27280"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25497"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-13"
+      },
+      {
+        "field": "calls",
+        "value": "2639"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2261"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-14"
+      },
+      {
+        "field": "calls",
+        "value": "47793"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "46329"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-14"
+      },
+      {
+        "field": "calls",
+        "value": "1648"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1535"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-15"
+      },
+      {
+        "field": "calls",
+        "value": "43079"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "41374"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-15"
+      },
+      {
+        "field": "calls",
+        "value": "476"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "325"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-16"
+      },
+      {
+        "field": "calls",
+        "value": "25234"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "23573"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-16"
+      },
+      {
+        "field": "calls",
+        "value": "870"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "230"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-17"
+      },
+      {
+        "field": "calls",
+        "value": "12355"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11010"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-17"
+      },
+      {
+        "field": "calls",
+        "value": "366"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "344"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-18"
+      },
+      {
+        "field": "calls",
+        "value": "54056"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "52308"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-18"
+      },
+      {
+        "field": "calls",
+        "value": "1686"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1655"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-19"
+      },
+      {
+        "field": "calls",
+        "value": "23303"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21677"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-19"
+      },
+      {
+        "field": "calls",
+        "value": "1363"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1266"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-20"
+      },
+      {
+        "field": "calls",
+        "value": "37810"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "35021"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-20"
+      },
+      {
+        "field": "calls",
+        "value": "2938"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2764"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-21"
+      },
+      {
+        "field": "calls",
+        "value": "24247"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21808"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-21"
+      },
+      {
+        "field": "calls",
+        "value": "939"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "930"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-22"
+      },
+      {
+        "field": "calls",
+        "value": "27612"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25608"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-22"
+      },
+      {
+        "field": "calls",
+        "value": "1759"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1573"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-23"
+      },
+      {
+        "field": "calls",
+        "value": "33006"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "31613"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-23"
+      },
+      {
+        "field": "calls",
+        "value": "134"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "109"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-24"
+      },
+      {
+        "field": "calls",
+        "value": "11361"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10435"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-24"
+      },
+      {
+        "field": "calls",
+        "value": "2559"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2416"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-25"
+      },
+      {
+        "field": "calls",
+        "value": "36422"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "33812"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-25"
+      },
+      {
+        "field": "calls",
+        "value": "6873"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6712"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-26"
+      },
+      {
+        "field": "calls",
+        "value": "17881"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15870"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-26"
+      },
+      {
+        "field": "calls",
+        "value": "9326"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9194"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-27"
+      },
+      {
+        "field": "calls",
+        "value": "28047"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25514"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-27"
+      },
+      {
+        "field": "calls",
+        "value": "3429"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3387"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-28"
+      },
+      {
+        "field": "calls",
+        "value": "25612"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "23632"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-28"
+      },
+      {
+        "field": "calls",
+        "value": "5242"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5206"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-29"
+      },
+      {
+        "field": "calls",
+        "value": "33796"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "31826"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-29"
+      },
+      {
+        "field": "calls",
+        "value": "5972"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5840"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-30"
+      },
+      {
+        "field": "calls",
+        "value": "13975"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12723"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-30"
+      },
+      {
+        "field": "calls",
+        "value": "1500"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1278"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-31"
+      },
+      {
+        "field": "calls",
+        "value": "22862"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21496"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-01-31"
+      },
+      {
+        "field": "calls",
+        "value": "215"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "56"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-01"
+      },
+      {
+        "field": "calls",
+        "value": "54255"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "51276"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-01"
+      },
+      {
+        "field": "calls",
+        "value": "3234"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3200"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-02"
+      },
+      {
+        "field": "calls",
+        "value": "21709"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18450"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-02"
+      },
+      {
+        "field": "calls",
+        "value": "1751"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1731"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-03"
+      },
+      {
+        "field": "calls",
+        "value": "27810"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25291"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-03"
+      },
+      {
+        "field": "calls",
+        "value": "8593"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8574"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-04"
+      },
+      {
+        "field": "calls",
+        "value": "15279"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13032"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-04"
+      },
+      {
+        "field": "calls",
+        "value": "434"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "395"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-05"
+      },
+      {
+        "field": "calls",
+        "value": "20193"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18334"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-05"
+      },
+      {
+        "field": "calls",
+        "value": "7535"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7341"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-06"
+      },
+      {
+        "field": "calls",
+        "value": "23808"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22819"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-06"
+      },
+      {
+        "field": "calls",
+        "value": "625"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "363"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-07"
+      },
+      {
+        "field": "calls",
+        "value": "27308"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25865"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-07"
+      },
+      {
+        "field": "calls",
+        "value": "100"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-08"
+      },
+      {
+        "field": "calls",
+        "value": "23672"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21843"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-08"
+      },
+      {
+        "field": "calls",
+        "value": "1494"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1238"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-09"
+      },
+      {
+        "field": "calls",
+        "value": "15046"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12657"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-09"
+      },
+      {
+        "field": "calls",
+        "value": "4037"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3602"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-10"
+      },
+      {
+        "field": "calls",
+        "value": "15860"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14370"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-10"
+      },
+      {
+        "field": "calls",
+        "value": "1284"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1176"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-11"
+      },
+      {
+        "field": "calls",
+        "value": "15250"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12540"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-11"
+      },
+      {
+        "field": "calls",
+        "value": "3201"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2918"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-12"
+      },
+      {
+        "field": "calls",
+        "value": "10762"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8454"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-12"
+      },
+      {
+        "field": "calls",
+        "value": "863"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "586"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-13"
+      },
+      {
+        "field": "calls",
+        "value": "8383"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6514"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-13"
+      },
+      {
+        "field": "calls",
+        "value": "725"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "679"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-14"
+      },
+      {
+        "field": "calls",
+        "value": "7676"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5907"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-14"
+      },
+      {
+        "field": "calls",
+        "value": "779"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "695"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-15"
+      },
+      {
+        "field": "calls",
+        "value": "11664"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9506"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-15"
+      },
+      {
+        "field": "calls",
+        "value": "2810"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2524"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-16"
+      },
+      {
+        "field": "calls",
+        "value": "15835"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12275"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-16"
+      },
+      {
+        "field": "calls",
+        "value": "915"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "411"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-17"
+      },
+      {
+        "field": "calls",
+        "value": "9821"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7600"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-17"
+      },
+      {
+        "field": "calls",
+        "value": "800"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "448"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-18"
+      },
+      {
+        "field": "calls",
+        "value": "10213"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8284"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-18"
+      },
+      {
+        "field": "calls",
+        "value": "536"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "393"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-19"
+      },
+      {
+        "field": "calls",
+        "value": "10590"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9079"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-19"
+      },
+      {
+        "field": "calls",
+        "value": "719"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "366"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-20"
+      },
+      {
+        "field": "calls",
+        "value": "7307"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6127"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-20"
+      },
+      {
+        "field": "calls",
+        "value": "507"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "288"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-21"
+      },
+      {
+        "field": "calls",
+        "value": "5104"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3628"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-21"
+      },
+      {
+        "field": "calls",
+        "value": "610"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "153"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-22"
+      },
+      {
+        "field": "calls",
+        "value": "17147"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13668"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-22"
+      },
+      {
+        "field": "calls",
+        "value": "2770"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2583"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-23"
+      },
+      {
+        "field": "calls",
+        "value": "13732"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11151"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-23"
+      },
+      {
+        "field": "calls",
+        "value": "907"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "717"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-24"
+      },
+      {
+        "field": "calls",
+        "value": "13196"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12012"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-24"
+      },
+      {
+        "field": "calls",
+        "value": "787"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "585"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-25"
+      },
+      {
+        "field": "calls",
+        "value": "13925"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11437"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-25"
+      },
+      {
+        "field": "calls",
+        "value": "1050"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1019"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-26"
+      },
+      {
+        "field": "calls",
+        "value": "13389"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11150"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-26"
+      },
+      {
+        "field": "calls",
+        "value": "812"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "700"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-27"
+      },
+      {
+        "field": "calls",
+        "value": "10695"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8830"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-27"
+      },
+      {
+        "field": "calls",
+        "value": "3239"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2621"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-28"
+      },
+      {
+        "field": "calls",
+        "value": "8122"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6020"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-02-28"
+      },
+      {
+        "field": "calls",
+        "value": "156"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "99"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-01"
+      },
+      {
+        "field": "calls",
+        "value": "30244"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25505"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-01"
+      },
+      {
+        "field": "calls",
+        "value": "2823"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2227"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-02"
+      },
+      {
+        "field": "calls",
+        "value": "18424"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16509"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-02"
+      },
+      {
+        "field": "calls",
+        "value": "3655"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3323"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-03"
+      },
+      {
+        "field": "calls",
+        "value": "28051"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25732"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-03"
+      },
+      {
+        "field": "calls",
+        "value": "2160"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1956"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-04"
+      },
+      {
+        "field": "calls",
+        "value": "19030"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16822"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-04"
+      },
+      {
+        "field": "calls",
+        "value": "932"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "695"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-05"
+      },
+      {
+        "field": "calls",
+        "value": "26893"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "25292"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-05"
+      },
+      {
+        "field": "calls",
+        "value": "723"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "599"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-06"
+      },
+      {
+        "field": "calls",
+        "value": "25425"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "24184"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-06"
+      },
+      {
+        "field": "calls",
+        "value": "733"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "624"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-07"
+      },
+      {
+        "field": "calls",
+        "value": "6146"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4980"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-07"
+      },
+      {
+        "field": "calls",
+        "value": "336"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "68"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-08"
+      },
+      {
+        "field": "calls",
+        "value": "8529"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7047"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-08"
+      },
+      {
+        "field": "calls",
+        "value": "742"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "586"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-09"
+      },
+      {
+        "field": "calls",
+        "value": "37953"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "34362"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-09"
+      },
+      {
+        "field": "calls",
+        "value": "511"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "462"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-10"
+      },
+      {
+        "field": "calls",
+        "value": "72733"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "65170"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-10"
+      },
+      {
+        "field": "calls",
+        "value": "970"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "799"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-11"
+      },
+      {
+        "field": "calls",
+        "value": "36248"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "32906"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-11"
+      },
+      {
+        "field": "calls",
+        "value": "1194"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1159"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-12"
+      },
+      {
+        "field": "calls",
+        "value": "22515"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "20189"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-12"
+      },
+      {
+        "field": "calls",
+        "value": "1055"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1010"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-13"
+      },
+      {
+        "field": "calls",
+        "value": "19581"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "17002"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-13"
+      },
+      {
+        "field": "calls",
+        "value": "194"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "136"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-14"
+      },
+      {
+        "field": "calls",
+        "value": "12782"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10911"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-14"
+      },
+      {
+        "field": "calls",
+        "value": "259"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-15"
+      },
+      {
+        "field": "calls",
+        "value": "17507"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14626"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-15"
+      },
+      {
+        "field": "calls",
+        "value": "3133"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3102"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-16"
+      },
+      {
+        "field": "calls",
+        "value": "15791"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13279"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-16"
+      },
+      {
+        "field": "calls",
+        "value": "3134"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2641"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-17"
+      },
+      {
+        "field": "calls",
+        "value": "22347"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18945"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-17"
+      },
+      {
+        "field": "calls",
+        "value": "1507"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1402"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-18"
+      },
+      {
+        "field": "calls",
+        "value": "19068"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15759"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-18"
+      },
+      {
+        "field": "calls",
+        "value": "2414"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2357"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-19"
+      },
+      {
+        "field": "calls",
+        "value": "15373"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12899"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-19"
+      },
+      {
+        "field": "calls",
+        "value": "2391"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2292"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-20"
+      },
+      {
+        "field": "calls",
+        "value": "27077"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22323"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-20"
+      },
+      {
+        "field": "calls",
+        "value": "1161"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1083"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-21"
+      },
+      {
+        "field": "calls",
+        "value": "13876"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9657"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-21"
+      },
+      {
+        "field": "calls",
+        "value": "1088"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "726"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-22"
+      },
+      {
+        "field": "calls",
+        "value": "14734"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11618"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-22"
+      },
+      {
+        "field": "calls",
+        "value": "2049"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "929"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-23"
+      },
+      {
+        "field": "calls",
+        "value": "11368"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8251"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-23"
+      },
+      {
+        "field": "calls",
+        "value": "1346"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "721"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-24"
+      },
+      {
+        "field": "calls",
+        "value": "19929"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16964"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-24"
+      },
+      {
+        "field": "calls",
+        "value": "1686"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1315"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-25"
+      },
+      {
+        "field": "calls",
+        "value": "19027"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15780"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-25"
+      },
+      {
+        "field": "calls",
+        "value": "1384"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "929"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-26"
+      },
+      {
+        "field": "calls",
+        "value": "16681"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12943"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-26"
+      },
+      {
+        "field": "calls",
+        "value": "2300"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1266"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-27"
+      },
+      {
+        "field": "calls",
+        "value": "20517"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "17333"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-27"
+      },
+      {
+        "field": "calls",
+        "value": "1062"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "743"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-28"
+      },
+      {
+        "field": "calls",
+        "value": "20253"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "17037"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-28"
+      },
+      {
+        "field": "calls",
+        "value": "2058"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1577"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-29"
+      },
+      {
+        "field": "calls",
+        "value": "25359"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21668"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-29"
+      },
+      {
+        "field": "calls",
+        "value": "2703"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2468"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-30"
+      },
+      {
+        "field": "calls",
+        "value": "21171"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15771"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-30"
+      },
+      {
+        "field": "calls",
+        "value": "1909"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1764"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-31"
+      },
+      {
+        "field": "calls",
+        "value": "15988"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12718"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-03-31"
+      },
+      {
+        "field": "calls",
+        "value": "2230"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2037"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-01"
+      },
+      {
+        "field": "calls",
+        "value": "17275"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13676"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-01"
+      },
+      {
+        "field": "calls",
+        "value": "3558"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3215"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-02"
+      },
+      {
+        "field": "calls",
+        "value": "25589"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21840"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-02"
+      },
+      {
+        "field": "calls",
+        "value": "3854"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3519"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-03"
+      },
+      {
+        "field": "calls",
+        "value": "14621"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12865"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-03"
+      },
+      {
+        "field": "calls",
+        "value": "340"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "172"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-04"
+      },
+      {
+        "field": "calls",
+        "value": "14255"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11352"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-04"
+      },
+      {
+        "field": "calls",
+        "value": "305"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-05"
+      },
+      {
+        "field": "calls",
+        "value": "16982"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12646"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-05"
+      },
+      {
+        "field": "calls",
+        "value": "933"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "125"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-06"
+      },
+      {
+        "field": "calls",
+        "value": "13798"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10137"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-06"
+      },
+      {
+        "field": "calls",
+        "value": "1079"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "735"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-07"
+      },
+      {
+        "field": "calls",
+        "value": "26578"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16935"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-07"
+      },
+      {
+        "field": "calls",
+        "value": "3076"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "996"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-08"
+      },
+      {
+        "field": "calls",
+        "value": "20427"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14950"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-08"
+      },
+      {
+        "field": "calls",
+        "value": "2716"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2425"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-09"
+      },
+      {
+        "field": "calls",
+        "value": "15164"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11906"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-09"
+      },
+      {
+        "field": "calls",
+        "value": "1637"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1154"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-10"
+      },
+      {
+        "field": "calls",
+        "value": "15360"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12130"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-10"
+      },
+      {
+        "field": "calls",
+        "value": "1986"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1793"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-11"
+      },
+      {
+        "field": "calls",
+        "value": "13731"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10880"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-11"
+      },
+      {
+        "field": "calls",
+        "value": "332"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "119"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-12"
+      },
+      {
+        "field": "calls",
+        "value": "15503"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12865"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-12"
+      },
+      {
+        "field": "calls",
+        "value": "2028"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1869"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-13"
+      },
+      {
+        "field": "calls",
+        "value": "16804"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13015"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-13"
+      },
+      {
+        "field": "calls",
+        "value": "2894"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2502"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-14"
+      },
+      {
+        "field": "calls",
+        "value": "23028"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "17792"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-14"
+      },
+      {
+        "field": "calls",
+        "value": "1606"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1554"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-15"
+      },
+      {
+        "field": "calls",
+        "value": "25450"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21288"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-15"
+      },
+      {
+        "field": "calls",
+        "value": "4379"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4087"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-16"
+      },
+      {
+        "field": "calls",
+        "value": "27552"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22556"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-16"
+      },
+      {
+        "field": "calls",
+        "value": "3902"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3792"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-17"
+      },
+      {
+        "field": "calls",
+        "value": "57031"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "48096"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-17"
+      },
+      {
+        "field": "calls",
+        "value": "2154"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1985"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-18"
+      },
+      {
+        "field": "calls",
+        "value": "55687"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "45724"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-18"
+      },
+      {
+        "field": "calls",
+        "value": "5691"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5500"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-19"
+      },
+      {
+        "field": "calls",
+        "value": "56258"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "43547"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-19"
+      },
+      {
+        "field": "calls",
+        "value": "4243"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3530"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-20"
+      },
+      {
+        "field": "calls",
+        "value": "28411"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "21774"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-20"
+      },
+      {
+        "field": "calls",
+        "value": "1912"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1662"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-21"
+      },
+      {
+        "field": "calls",
+        "value": "20554"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15077"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-21"
+      },
+      {
+        "field": "calls",
+        "value": "1833"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1622"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-22"
+      },
+      {
+        "field": "calls",
+        "value": "22145"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "18004"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-22"
+      },
+      {
+        "field": "calls",
+        "value": "2250"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1883"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-23"
+      },
+      {
+        "field": "calls",
+        "value": "22022"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16313"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-23"
+      },
+      {
+        "field": "calls",
+        "value": "1269"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1126"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-24"
+      },
+      {
+        "field": "calls",
+        "value": "14273"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12216"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-24"
+      },
+      {
+        "field": "calls",
+        "value": "1089"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1024"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-25"
+      },
+      {
+        "field": "calls",
+        "value": "5735"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4512"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-25"
+      },
+      {
+        "field": "calls",
+        "value": "676"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "142"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-26"
+      },
+      {
+        "field": "calls",
+        "value": "12243"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9720"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-26"
+      },
+      {
+        "field": "calls",
+        "value": "1468"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1340"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-27"
+      },
+      {
+        "field": "calls",
+        "value": "19795"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15369"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-27"
+      },
+      {
+        "field": "calls",
+        "value": "1848"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1755"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-28"
+      },
+      {
+        "field": "calls",
+        "value": "13770"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11275"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-28"
+      },
+      {
+        "field": "calls",
+        "value": "591"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "560"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-29"
+      },
+      {
+        "field": "calls",
+        "value": "18189"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "15593"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-29"
+      },
+      {
+        "field": "calls",
+        "value": "808"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "756"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-30"
+      },
+      {
+        "field": "calls",
+        "value": "10426"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7556"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-04-30"
+      },
+      {
+        "field": "calls",
+        "value": "785"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "737"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-01"
+      },
+      {
+        "field": "calls",
+        "value": "10889"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8956"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-01"
+      },
+      {
+        "field": "calls",
+        "value": "174"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "167"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-02"
+      },
+      {
+        "field": "calls",
+        "value": "11180"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9212"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-02"
+      },
+      {
+        "field": "calls",
+        "value": "3816"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3567"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-03"
+      },
+      {
+        "field": "calls",
+        "value": "12171"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10514"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-03"
+      },
+      {
+        "field": "calls",
+        "value": "1098"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1083"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-04"
+      },
+      {
+        "field": "calls",
+        "value": "23083"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "20322"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-04"
+      },
+      {
+        "field": "calls",
+        "value": "3764"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3662"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-05"
+      },
+      {
+        "field": "calls",
+        "value": "14279"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12063"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-05"
+      },
+      {
+        "field": "calls",
+        "value": "2268"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2260"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-06"
+      },
+      {
+        "field": "calls",
+        "value": "18435"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14211"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-06"
+      },
+      {
+        "field": "calls",
+        "value": "3366"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2988"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-07"
+      },
+      {
+        "field": "calls",
+        "value": "36351"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "34231"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-07"
+      },
+      {
+        "field": "calls",
+        "value": "2096"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1477"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-08"
+      },
+      {
+        "field": "calls",
+        "value": "12238"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10484"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-08"
+      },
+      {
+        "field": "calls",
+        "value": "290"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "218"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-09"
+      },
+      {
+        "field": "calls",
+        "value": "7183"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5385"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-09"
+      },
+      {
+        "field": "calls",
+        "value": "173"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "45"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-10"
+      },
+      {
+        "field": "calls",
+        "value": "9515"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7494"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-10"
+      },
+      {
+        "field": "calls",
+        "value": "1007"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "774"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-11"
+      },
+      {
+        "field": "calls",
+        "value": "13289"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9455"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-11"
+      },
+      {
+        "field": "calls",
+        "value": "524"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "521"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-12"
+      },
+      {
+        "field": "calls",
+        "value": "10563"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7771"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-12"
+      },
+      {
+        "field": "calls",
+        "value": "253"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "93"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-13"
+      },
+      {
+        "field": "calls",
+        "value": "14309"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11097"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-13"
+      },
+      {
+        "field": "calls",
+        "value": "1012"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "933"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-14"
+      },
+      {
+        "field": "calls",
+        "value": "17699"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14006"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-14"
+      },
+      {
+        "field": "calls",
+        "value": "1330"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1196"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-15"
+      },
+      {
+        "field": "calls",
+        "value": "10357"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8365"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-15"
+      },
+      {
+        "field": "calls",
+        "value": "423"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "95"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-16"
+      },
+      {
+        "field": "calls",
+        "value": "11727"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8591"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-16"
+      },
+      {
+        "field": "calls",
+        "value": "178"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "173"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-17"
+      },
+      {
+        "field": "calls",
+        "value": "12936"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10140"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-17"
+      },
+      {
+        "field": "calls",
+        "value": "529"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "120"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-18"
+      },
+      {
+        "field": "calls",
+        "value": "17293"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13715"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-18"
+      },
+      {
+        "field": "calls",
+        "value": "225"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "99"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-19"
+      },
+      {
+        "field": "calls",
+        "value": "10874"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7818"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-19"
+      },
+      {
+        "field": "calls",
+        "value": "1653"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1636"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-20"
+      },
+      {
+        "field": "calls",
+        "value": "15001"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11342"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-20"
+      },
+      {
+        "field": "calls",
+        "value": "7798"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7190"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-21"
+      },
+      {
+        "field": "calls",
+        "value": "12525"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9685"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-21"
+      },
+      {
+        "field": "calls",
+        "value": "1562"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1491"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-22"
+      },
+      {
+        "field": "calls",
+        "value": "15056"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12529"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-22"
+      },
+      {
+        "field": "calls",
+        "value": "1533"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "906"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-23"
+      },
+      {
+        "field": "calls",
+        "value": "8286"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5972"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-23"
+      },
+      {
+        "field": "calls",
+        "value": "332"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "51"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-24"
+      },
+      {
+        "field": "calls",
+        "value": "8854"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6347"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-24"
+      },
+      {
+        "field": "calls",
+        "value": "535"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "469"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-25"
+      },
+      {
+        "field": "calls",
+        "value": "14347"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "10071"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-25"
+      },
+      {
+        "field": "calls",
+        "value": "1587"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1572"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-26"
+      },
+      {
+        "field": "calls",
+        "value": "21999"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "17361"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-26"
+      },
+      {
+        "field": "calls",
+        "value": "4749"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4497"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-27"
+      },
+      {
+        "field": "calls",
+        "value": "14137"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12274"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-27"
+      },
+      {
+        "field": "calls",
+        "value": "3374"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "3037"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-28"
+      },
+      {
+        "field": "calls",
+        "value": "61888"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "57447"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-28"
+      },
+      {
+        "field": "calls",
+        "value": "2750"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2580"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-29"
+      },
+      {
+        "field": "calls",
+        "value": "18098"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14277"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-29"
+      },
+      {
+        "field": "calls",
+        "value": "1697"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1476"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-30"
+      },
+      {
+        "field": "calls",
+        "value": "15041"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12404"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-30"
+      },
+      {
+        "field": "calls",
+        "value": "15"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-31"
+      },
+      {
+        "field": "calls",
+        "value": "28996"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "26012"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-05-31"
+      },
+      {
+        "field": "calls",
+        "value": "387"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "150"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-01"
+      },
+      {
+        "field": "calls",
+        "value": "16869"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13606"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-01"
+      },
+      {
+        "field": "calls",
+        "value": "5708"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5219"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-02"
+      },
+      {
+        "field": "calls",
+        "value": "8757"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6453"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-02"
+      },
+      {
+        "field": "calls",
+        "value": "1738"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1448"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-03"
+      },
+      {
+        "field": "calls",
+        "value": "23285"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "20079"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-03"
+      },
+      {
+        "field": "calls",
+        "value": "1832"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1720"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-04"
+      },
+      {
+        "field": "calls",
+        "value": "11860"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9455"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-04"
+      },
+      {
+        "field": "calls",
+        "value": "1870"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1827"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-05"
+      },
+      {
+        "field": "calls",
+        "value": "10534"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8809"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-05"
+      },
+      {
+        "field": "calls",
+        "value": "36"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-06"
+      },
+      {
+        "field": "calls",
+        "value": "8533"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7037"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-06"
+      },
+      {
+        "field": "calls",
+        "value": "11"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-07"
+      },
+      {
+        "field": "calls",
+        "value": "15185"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12123"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-07"
+      },
+      {
+        "field": "calls",
+        "value": "5745"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5730"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-08"
+      },
+      {
+        "field": "calls",
+        "value": "16124"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13243"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-08"
+      },
+      {
+        "field": "calls",
+        "value": "5943"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5830"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-09"
+      },
+      {
+        "field": "calls",
+        "value": "16578"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13828"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-09"
+      },
+      {
+        "field": "calls",
+        "value": "2574"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2551"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-10"
+      },
+      {
+        "field": "calls",
+        "value": "9584"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7545"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-10"
+      },
+      {
+        "field": "calls",
+        "value": "1475"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1127"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-11"
+      },
+      {
+        "field": "calls",
+        "value": "11660"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8789"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-11"
+      },
+      {
+        "field": "calls",
+        "value": "1376"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1071"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-12"
+      },
+      {
+        "field": "calls",
+        "value": "6386"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4654"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-12"
+      },
+      {
+        "field": "calls",
+        "value": "221"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "202"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-13"
+      },
+      {
+        "field": "calls",
+        "value": "15144"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12104"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-13"
+      },
+      {
+        "field": "calls",
+        "value": "205"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "196"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-14"
+      },
+      {
+        "field": "calls",
+        "value": "13445"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11041"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-14"
+      },
+      {
+        "field": "calls",
+        "value": "1402"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "647"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-15"
+      },
+      {
+        "field": "calls",
+        "value": "12602"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9750"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-15"
+      },
+      {
+        "field": "calls",
+        "value": "1029"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "842"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-16"
+      },
+      {
+        "field": "calls",
+        "value": "11608"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7648"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-16"
+      },
+      {
+        "field": "calls",
+        "value": "2301"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2126"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-17"
+      },
+      {
+        "field": "calls",
+        "value": "16433"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13252"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-17"
+      },
+      {
+        "field": "calls",
+        "value": "2986"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2650"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-18"
+      },
+      {
+        "field": "calls",
+        "value": "8917"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6753"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-18"
+      },
+      {
+        "field": "calls",
+        "value": "1221"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1213"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-19"
+      },
+      {
+        "field": "calls",
+        "value": "12031"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9422"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-19"
+      },
+      {
+        "field": "calls",
+        "value": "2100"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2086"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-20"
+      },
+      {
+        "field": "calls",
+        "value": "8690"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6683"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-20"
+      },
+      {
+        "field": "calls",
+        "value": "411"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "4"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-21"
+      },
+      {
+        "field": "calls",
+        "value": "36549"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "29719"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-21"
+      },
+      {
+        "field": "calls",
+        "value": "944"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "541"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-22"
+      },
+      {
+        "field": "calls",
+        "value": "73556"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "62061"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-22"
+      },
+      {
+        "field": "calls",
+        "value": "1076"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "702"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-23"
+      },
+      {
+        "field": "calls",
+        "value": "89457"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "72346"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-23"
+      },
+      {
+        "field": "calls",
+        "value": "2571"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2471"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-24"
+      },
+      {
+        "field": "calls",
+        "value": "42149"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "35662"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-24"
+      },
+      {
+        "field": "calls",
+        "value": "1113"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "824"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-25"
+      },
+      {
+        "field": "calls",
+        "value": "54682"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "46158"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-25"
+      },
+      {
+        "field": "calls",
+        "value": "1538"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1222"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-26"
+      },
+      {
+        "field": "calls",
+        "value": "49111"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "42293"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-26"
+      },
+      {
+        "field": "calls",
+        "value": "467"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "141"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-27"
+      },
+      {
+        "field": "calls",
+        "value": "10561"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "8321"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-27"
+      },
+      {
+        "field": "calls",
+        "value": "234"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-28"
+      },
+      {
+        "field": "calls",
+        "value": "14089"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9227"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-28"
+      },
+      {
+        "field": "calls",
+        "value": "1762"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "787"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-29"
+      },
+      {
+        "field": "calls",
+        "value": "14890"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11370"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-29"
+      },
+      {
+        "field": "calls",
+        "value": "2341"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1893"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-30"
+      },
+      {
+        "field": "calls",
+        "value": "28137"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22171"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-06-30"
+      },
+      {
+        "field": "calls",
+        "value": "955"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "368"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-01"
+      },
+      {
+        "field": "calls",
+        "value": "17596"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "14255"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-01"
+      },
+      {
+        "field": "calls",
+        "value": "2377"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2072"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-02"
+      },
+      {
+        "field": "calls",
+        "value": "20593"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16065"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-02"
+      },
+      {
+        "field": "calls",
+        "value": "2416"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2072"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-03"
+      },
+      {
+        "field": "calls",
+        "value": "26758"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "16876"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-03"
+      },
+      {
+        "field": "calls",
+        "value": "991"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "278"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-04"
+      },
+      {
+        "field": "calls",
+        "value": "7529"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5022"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-04"
+      },
+      {
+        "field": "calls",
+        "value": "446"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "100"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-05"
+      },
+      {
+        "field": "calls",
+        "value": "23995"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "13673"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-05"
+      },
+      {
+        "field": "calls",
+        "value": "1678"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1073"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-06"
+      },
+      {
+        "field": "calls",
+        "value": "15489"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "12747"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-06"
+      },
+      {
+        "field": "calls",
+        "value": "1320"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1047"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-07"
+      },
+      {
+        "field": "calls",
+        "value": "14165"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11431"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-07"
+      },
+      {
+        "field": "calls",
+        "value": "3610"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "2876"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-08"
+      },
+      {
+        "field": "calls",
+        "value": "14976"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "11706"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-08"
+      },
+      {
+        "field": "calls",
+        "value": "1486"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1086"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-09"
+      },
+      {
+        "field": "calls",
+        "value": "12129"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "9180"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-09"
+      },
+      {
+        "field": "calls",
+        "value": "1573"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "1379"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-10"
+      },
+      {
+        "field": "calls",
+        "value": "10031"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "6895"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-10"
+      },
+      {
+        "field": "calls",
+        "value": "107"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "79"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-11"
+      },
+      {
+        "field": "calls",
+        "value": "8589"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "7241"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-11"
+      },
+      {
+        "field": "calls",
+        "value": "927"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "908"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-12"
+      },
+      {
+        "field": "calls",
+        "value": "29165"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "22949"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-12"
+      },
+      {
+        "field": "calls",
+        "value": "6345"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "5904"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-tprod"
+      }
+    ],
+    [
+      {
+        "field": "date",
+        "value": "2026-07-13"
+      },
+      {
+        "field": "calls",
+        "value": "25"
+      },
+      {
+        "field": "calls_2xx",
+        "value": "23"
+      },
+      {
+        "field": "service",
+        "value": "neoapi-prod"
+      }
+    ]
+  ],
+  "status": "Complete"
+}

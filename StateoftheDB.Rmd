@@ -28,7 +28,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 
 library(pacman)
-p_load(lubridate, RPostgreSQL, DT, ggplot2, 
+p_load(lubridate, RPostgres, DT, ggplot2, 
        ggthemes, svglite,
        httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales,
        leaflet.providers, dotenv, snakecase)
@@ -37,12 +37,15 @@ load_dot_env()
 
 lastdate <- today() - years(1)
 
-con <- dbConnect(dbDriver("PostgreSQL"),
-                 dbname = Sys.getenv("DBNAME"), 
-                 host = Sys.getenv("HOST"), 
-                 port = Sys.getenv("PORT"), 
-                 user= Sys.getenv("USER"), 
-                 password= Sys.getenv("PASSWORD"))
+con <- dbConnect(
+  Postgres(),
+  host     = "localhost",
+  port     = 5555,
+  dbname   = "neotoma",
+  user     = "neotomaAdmin",
+  password = Sys.getenv("PGPASSWORD"),
+  sslmode  = "require"
+)
 
 p <- function(x) format(x, scientific=FALSE, big.mark=',')
 ```
@@ -68,7 +71,7 @@ Neotoma contains data from `r p(datasets)` datasets and `r p(sites)` unique site
 colnames(lastyear) = c('Datasets', 'Sites', 'Publications', 'Authors', 'Countries', 'Observations')
 outtable <- t(lastyear) %>% 
   as.data.frame %>% 
-  rename('Entries'='1') %>% 
+  rename('Entries'='V1') %>% 
   mutate('Entries' = p(`Entries`))
 DT::datatable(outtable,
   caption = htmltools::tags$caption(
@@ -231,15 +234,17 @@ Neotoma relies on significant the efforts of a volunteer group of data stewards 
 
 ### API Calls
 
-```{r pullLogs, echo=FALSE, fig.caption="Volume of API calls to API and Tilia servers, aggregated by day over the last 6 months."}
-pullLog <- jsonlite::fromJSON('log_run.json')['results'][[1]] %>%
+```{r pullLogs, echo=FALSE, eval=FALSE, fig.caption="- Volume of API calls to API and Tilia servers, aggregated by day over the last 6 months. - Not updated info"}
+
+# Cannot use for now as logs were not being sent to AWS Cloudwatch Logs
+pullLog <- jsonlite::fromJSON('log_run.json')['results']$results %>%
   purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
   bind_rows() %>%
   mutate(date = lubridate::date(date),
     calls = as.integer(calls),
     volume = as.integer(volume))
 
-pullCalls <- jsonlite::fromJSON('log_run_calls.json')['results'][[1]] %>%
+pullCalls <- jsonlite::fromJSON('log_run_calls.json')['results']$results %>%
   purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
   bind_rows() %>%
   mutate(calls = as.integer(calls),
@@ -261,13 +266,27 @@ ggplot(pullLog) +
 
 ```
 
-Since the API has been implemented there have been a total of `r p(sum(pullLog$calls))` calls to the Neotoma API. These include calls to the core API ([`api.neotomadb.org`](https://api.neotomadb.org)), calls to support the Neotoma Landing Pages ([`data.neotomadb.org`](https://data.neotomadb.org)) and calls to support Neotoma Explorer ([`apps.neotomadb.org/explorer`](https://data.neotomadb.org)).
+```{r pullLogs2, echo=FALSE, fig.caption="- Volume of API calls to API and Tilia servers, aggregated by day over the last 8 months."}
 
-The main APIs delivered a total of `r p(floor(sum(pullLog$volume, na.rm=TRUE) /1000000000))` GB of data to users since `r min(pullLog$date)`.
+# Cannot use for now as logs were not being sent to AWS Cloudwatch Logs
+pullLog <- jsonlite::fromJSON('log_run_all.json')['results']$results %>%
+  purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
+  bind_rows() %>%
+  mutate(date = lubridate::date(date),
+    calls = as.integer(calls),
+    calls_2xx = as.integer(calls_2xx))
+```
+
+In the last 8 months, there have been a total of `r p(sum(pullLog$calls_2xx))` calls to the Neotoma API. These include calls to the core API ([`api.neotomadb.org`](https://api.neotomadb.org)), calls to support the Neotoma Landing Pages ([`data.neotomadb.org`](https://data.neotomadb.org)) and calls to support Neotoma Explorer ([`apps.neotomadb.org/explorer`](https://data.neotomadb.org)).
+
+
+
+
+
+```{r callFrequency, echo=FALSE, eval=FALSE, warning=FALSE}
+# The main APIs delivered a total of `r p(floor(sum(pullLog$volume, na.rm=TRUE) /1000000000))` GB of data to users since `r min(pullLog$date)`.
 
 #### Specific API Calls
-
-```{r callFrequency, echo=FALSE, warning=FALSE}
 ggplot(pullCalls[1:20,]) +
   geom_bar(aes(x = 1:20, 
                y=fullcount/1000), stat='identity') +
@@ -276,9 +295,9 @@ ggplot(pullCalls[1:20,]) +
   theme(axis.text.x=element_blank())
 ```
 
-Several API calls are called thousands of times, but these are not necessarily the fastest, or slowest queries. There is no relationship between speed and the number of times an API endpoint is used. The most frequent API calls over the past week are:
+```{r freqCall, echo=FALSE, eval=FALSE}
 
-```{r freqCall, echo=FALSE}
+# Several API calls are called thousands of times, but these are not necessarily the fastest, or slowest queries. There is no relationship between speed and the number of times an API endpoint is used. The most frequent API calls over the past week are:
 pullCalls %>% 
   slice_max(fullcount, n = 20) %>% 
   select(path, fullcount) %>% 
