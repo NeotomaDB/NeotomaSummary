@@ -1,4 +1,10 @@
 connect_remote.json
 ceiwww/*
-.secrets.env
+.env
+.DS_Store
+*.Rproj
 .buildStats.sh
+.Rproj.user
+
+logs/
+*.md

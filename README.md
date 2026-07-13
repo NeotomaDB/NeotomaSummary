@@ -13,6 +13,7 @@ An RMarkdown document used to derive intermediary statistics for the Neotoma dat
 This project is an open project, and contributions are welcome from any individual.  All contributors to this project are bound by a [code of conduct](CODE_OF_CONDUCT.md).  Please review and follow this code of conduct as part of your contribution.
 
 * [![orcid](https://img.shields.io/badge/orcid-0000--0002--2700--4605-brightgreen.svg)](https://orcid.org/0000-0002-2700-4605) [Simon Goring](http://goring.org)
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0002--7926--4935-brightgreen.svg)](https://orcid.org/0000-0002-7926-4935) [Socorro Dominguez](https://ht-data.com/about)
 
 ### Tips for Contributing
 
@@ -39,7 +40,15 @@ rm -r ./dbout
 
 The above script creates a duplicate of the database locally and then cleans up the `sql` file extracted from the downloaded `tar` archive.
 
-The document expects environment variables (we use defaults here, assuming the Neotoma database has been restored locally):
+### Configuration
+
+The database connection variables are read from a `.env` file in the project root. Copy the provided template and fill in your values:
+
+```bash
+cp .env-template .env
+```
+
+The `.env` file defines the connection used by the build (defaults shown assume a locally restored Neotoma database):
 
 * DBNAME=neotoma
 * HOST=localhost
@@ -47,8 +56,25 @@ The document expects environment variables (we use defaults here, assuming the N
 * USER=postgres
 * PASSWORD=postgres
 
-These variables are currently set by hand in the `buildStats.sh` bash script.
+### Scripts
 
-To execute and build the RMarkdown file, simply run `bash buildStats.sh` and a valid HTML document will be generated and output into the `outputs` folder.
+* **`run_cloudwatchquery.sh`** — pulls API and Tilia usage statistics from AWS CloudWatch Logs (the Neotoma/Tilia Elastic Beanstalk nginx access logs) and writes them to the `log_run*.json` files that the report reads for its usage charts. It runs several CloudWatch Logs Insights queries, each of which sleeps ~5 minutes while the query completes, so a full pull takes several minutes and requires working `aws` CLI credentials. It is invoked automatically by `buildStats.sh`.
+* **`buildStats.sh`** — the main build script. It first runs `run_cloudwatchquery.sh` to refresh the usage logs, then loads the database connection variables from `.env` and renders `StateoftheDB.Rmd` into HTML. It no longer hardcodes credentials; both the local and remote modes use whatever is in `.env`.
+
+### Running the build
+
+To execute and build the RMarkdown file, run:
+
+```bash
+bash buildStats.sh local
+```
+
+The `local` argument just renders the report; a valid HTML document is generated and output into the `outputs` folder.
+
+Running it with no argument renders the report **and then commits and pushes the rebuilt artifacts** (`git add --all && git commit && git push`), which is how the periodic builds are published:
+
+```bash
+bash buildStats.sh
+```
 
 ![The rendered Neotoma Stats document.](assets/docScreenshot.png)
