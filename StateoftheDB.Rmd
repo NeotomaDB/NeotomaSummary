@@ -234,30 +234,34 @@ Neotoma relies on significant the efforts of a volunteer group of data stewards 
 
 ### API Calls
 
-```{r pullLogs, echo=FALSE, eval=FALSE, fig.caption="- Volume of API calls to API and Tilia servers, aggregated by day over the last 6 months. - Not updated info"}
+```{r pullLogs, echo=FALSE, fig.caption="- API calls per day, split by Explorer vs core. From the structured request logs, which start 2026-07-16, so this grows over time."}
 
-# Cannot use for now as logs were not being sent to AWS Cloudwatch Logs
-pullLog <- jsonlite::fromJSON('log_run.json')['results']$results %>%
+# Rich per-request data (calls, bytes, explorer split) from the App Runner JSON access logs.
+# Only exists from 2026-07-16 on; the long-run totals come from metrics (pullLog, below).
+pullLogRich <- jsonlite::fromJSON('log_run.json')['results']$results %>%
   purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
   bind_rows() %>%
   mutate(date = lubridate::date(date),
     calls = as.integer(calls),
     volume = as.integer(volume))
 
+# strip the query string
 pullCalls <- jsonlite::fromJSON('log_run_calls.json')['results']$results %>%
   purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
   bind_rows() %>%
   mutate(calls = as.integer(calls),
-    path = stringr::str_replace(path, '/[0-9,]*$', '')) %>%
+    path = stringr::str_replace(path, '\\?.*$', ''),
+    path = stringr::str_replace(path, '/[0-9,]*$', ''),
+    path = tolower(path)) %>%
   group_by(path) %>%
   summarize(fullcount = sum(calls)) %>%
   arrange(desc(fullcount))
 
-ggplot(pullLog) +
+ggplot(pullLogRich) +
   geom_bar(aes(x = date,
                y = calls,
                fill = explorerCall),
-           position = 'stack', 
+           position = 'stack',
            stat = 'identity') +
   scale_fill_viridis_d() +
   theme_tufte() +
@@ -268,7 +272,8 @@ ggplot(pullLog) +
 
 ```{r pullLogs2, echo=FALSE, fig.caption="- Volume of API calls to API and Tilia servers, aggregated by day over the last 8 months."}
 
-# Cannot use for now as logs were not being sent to AWS Cloudwatch Logs
+# Daily totals per service from App Runner metrics -- the long history back to the Nov 2025
+# migration, including the pre-2026-07-16 stretch when access logs still went to a file.
 pullLog <- jsonlite::fromJSON('log_run_all.json')['results']$results %>%
   purrr::map(function(x) tidyr::pivot_wider(x,names_from=field)) %>%
   bind_rows() %>%
@@ -279,26 +284,27 @@ pullLog <- jsonlite::fromJSON('log_run_all.json')['results']$results %>%
 
 In the last 8 months, there have been a total of `r p(sum(pullLog$calls_2xx))` calls to the Neotoma API. These include calls to the core API ([`api.neotomadb.org`](https://api.neotomadb.org)), calls to support the Neotoma Landing Pages ([`data.neotomadb.org`](https://data.neotomadb.org)) and calls to support Neotoma Explorer ([`apps.neotomadb.org/explorer`](https://data.neotomadb.org)).
 
-
-
-
-
-```{r callFrequency, echo=FALSE, eval=FALSE, warning=FALSE}
-# The main APIs delivered a total of `r p(floor(sum(pullLog$volume, na.rm=TRUE) /1000000000))` GB of data to users since `r min(pullLog$date)`.
+Since structured request logging began on 2026-07-16, the API has served `r p(floor(sum(pullLogRich$volume, na.rm=TRUE) / 1000000000))` GB of data. The per-endpoint and data-volume figures below come from those request logs and so cover 2026-07-16 onward, growing over time; the total call count above reaches back to the November 2025 App Runner migration via CloudWatch metrics, because before 2026-07-16 the API's request logs were written to a file and never reached CloudWatch.
 
 #### Specific API Calls
-ggplot(pullCalls[1:20,]) +
-  geom_bar(aes(x = 1:20, 
-               y=fullcount/1000), stat='identity') +
+
+
+```{r callFrequency, echo=FALSE, warning=FALSE}
+
+# top endpoints so far; head() rather than [1:20,] so it holds up while data is still thin.
+topCalls <- head(pullCalls, 20)
+ggplot(topCalls) +
+  geom_bar(aes(x = seq_len(nrow(topCalls)),
+               y = fullcount/1000), stat='identity') +
   theme_tufte() +
   labs(x='', y='Thousands of Calls') +
   theme(axis.text.x=element_blank())
 ```
 
-```{r freqCall, echo=FALSE, eval=FALSE}
+```{r freqCall, echo=FALSE}
 
-# Several API calls are called thousands of times, but these are not necessarily the fastest, or slowest queries. There is no relationship between speed and the number of times an API endpoint is used. The most frequent API calls over the past week are:
-pullCalls %>% 
+# Several API calls are called thousands of times, but these are not necessarily the fastest, or slowest queries. There is no relationship between speed and the number of times an API endpoint is used. The most frequent API calls are:
+pullCalls %>%
   slice_max(fullcount, n = 20) %>% 
   select(path, fullcount) %>% 
   DT::datatable(options=list(dom='tip', scrollX = "100%"),
